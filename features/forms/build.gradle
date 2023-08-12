@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-kapt'
+
+
+}
+
+
+ext {
+    materialVersion = '1.8.0'
+}
+
+android {
+    namespace 'com.ramonpsatu.studyorganizer.features.forms'
+    compileSdk rootProject.ext.sdkVersion
+
+
+    buildFeatures {
+
+        viewBinding true
+    }
+    defaultConfig {
+        targetSdk targetVersion
+        minSdk minVersion
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+}
+
+dependencies {
+    implementation project(':core:data')
+    implementation project(':core:ui')
+    implementation project(':features:collections')
+
+    implementation libs.kotlinx.coroutines.android
+    testImplementation libs.kotlinx.coroutines.test
+
+
+    implementation libs.bundles.navigation
+
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.core.ktx
+    implementation libs.android.material
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.test.junit
+
+    androidTestImplementation libs.androidx.test.ext.junit
+    androidTestImplementation libs.androidx.test.espresso.core
+
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+}

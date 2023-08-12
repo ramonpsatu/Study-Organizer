@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- First Letters-->
+    <string name="firstLetter_day_monday">S</string>
+    <string name="firstLetter_day_tuesday">T</string>
+    <string name="firstLetter_day_wednesday">Q</string>
+    <string name="firstLetter_day_thursday">Q</string>
+    <string name="firstLetter_day_friday">S</string>
+    <string name="firstLetter_day_saturday">S</string>
+    <string name="firstLetter_day_sunday">D</string>
+
+    <!-- Number of the day-->
+    <string name="number_of_the_day_monday">12</string>
+    <string name="number_of_the_day_tuesday">13</string>
+    <string name="number_of_the_day_wednesday">14</string>
+    <string name="number_of_the_day_thursday">15</string>
+    <string name="number_of_the_day_friday">16</string>
+    <string name="number_of_the_day_saturday">17</string>
+    <string name="number_of_the_day_sunday">18</string>
+
+    <!--Strings for alertDialog screen printing-->
+    <string name="text_dialog_activity">Aquivo gerado com sucesso!</string>
+    <string name="text_dialog_activity_browser_button">Navegar</string>
+    <string name="text_dialog_activity_remain_button">Permanecer</string>
+    <string name="text_dialog_activity_exists">Dependendo da versão do Android do seu aparelho o arquivo  aparecerá automaticamente em Download ou Documentos Recentes do seu gerenciador de arquivos.
+
+        \n\nCaso contrário, navegue manualmente para configurações > Armazenamento > Memória Interna > Download > TOS-PDFs.
+
+        \n\nSe deseja ser redirecioiando para Download clique no botão  navegar.
+
+    </string>
+    <string name="text_dialog_activity_no_exists">O arquivo foi salvo em Armazenamento > Memória Interna > TOS-PDFs.
+\n\nNão foi detectado um recurso de direcionamento para o local do arquivo.
+
+\n\nNavegue manualmente para o seu gerenciador de arquivos ou configurações > Armazenamento > Memória Interna > Download.
+    </string>
+    <string name="text_dialog_permissions">As permissões foram negadas.</string>
+    <string name="text_dialog_permissions_message">Para usar os recursos de geração de PDF é necessário aceitar as permissões.\nVocê deveria navegar manualmente até informações do App e confirmá-las.
+
+    </string>
+    <string name="text_permissions_granted">Permissões concedidas!</string>
+    <string name="text_warning_only_subjects">Escolha apenas uma matéria!!</string>
+    <string name="text_warning_a_subjects">Escolha uma matéria!!</string>
+    <string name="text_warning_grid_empty">A grade de matérias está vazia!!</string>
+    <string name="text_warning_field_cannot_null">O campo não pode estar vazio!!</string>
+    <string name="text_warning_subject_list_empty">A lista de matérias está vazia!!</string>
+    <string name="text_warning_topic_list_empty_for_subject">Esta matéria não tem tópicos!!</string>
+    <string name="text_warning_pdf_generated_successfully">O aqruivo PDF foi gerado com sucesso!</string>
+    <string name="text_to_add">Adicionar</string>
+    <string name="text_to_generate">Gerar</string>
+    <string name="text_calendar">Calendário</string>
+    <string name="text_research">Pesquisar</string>
+    <string name="text_amount_of_questions">Total de Questões:</string>
+    <string name="text_register_word">Registrar</string>
+    <string name="tos_all_topics_with_the_subject">TOS_Todos os tópicos da matéria.pdf</string>
+    <string name="tos_list_of_subject">TOS_Lista de matérias.pdf</string>
+    <string name="tos_grid_of_subject">TOS_Grade de matérias.pdf</string>
+    <string name="tos_blank_subject_grid">TOS_Grade de matéras em branco..pdf</string>
+
+    <!--Content Description-->
+    <string name="contentDescription_logo_image">Logo da Aplicação Organizador de Taferas para Estudantes</string>
+    <string name="contentDescription_main_calendar">Navegar para tela de calendário principal</string>
+    <string name="contentDescription_new_subject">Criar matéria nova</string>
+    <string name="contentDescription_print_out_pdf">Imprimir relatório em PDF</string>
+    <string name="contentDescription_page_binding">Encadernamento da página</string>
+    <string name="contentDescription_btnReturn_subject_screen">Voltar para tela de edição de matérias</string>
+    <string name="contentDescription_information_image">Navegar para a tela de informação</string>
+    <string name="contentDescription_save_button">Salvar</string>
+    <string name="contentDescription_create_button">Criar conta</string>
+    <string name="contentDescription_open_button">Abrir</string>
+    <string name="contentDescription_login_button">Entrar na conta</string>
+    <string name="contentDescription_icon_username">Ícone correspondente ao nome de usuário</string>
+    <string name="contentDescription_icon_password">Ícone correspondente a senha de usuário</string>
+    <string name="contentDescription_create_topic_button">Criar novo tópico para matéria</string>
+    <string name="contentDescription_timer_button">Navegar para tela do temporizador</string>
+    <string name="contentDescription_research_button">Escolha uma data para pesquisar os tópicos</string>
+    <string name="contentDescription_return_button">Retorne para tela de tópicos</string>
+    <string name="contentDescription_background_subject_field">Compo da máteria</string>
+    <string name="contentDescription_edit_button">Editar matéria</string>
+    <string name="contentDescription_show_isCompleted_checkbox">Indica o estado do item se estar completo ou não.</string>
+    <string name="contentDescription_show_topic_list">Navega para tela de tópicos</string>
+    <string name="contentDescription_text_match">Acertos</string>
+    <string name="contentDescription_text_error">Erros</string>
+    <string name="contentDescription_button_back">Volta para tela anterior.</string>
+    <string name="text_back">Voltar</string>
+
+
+    <!--Months od the year -->
+    <string name="text_month_january">Janeiro</string>
+    <string name="text_month_february">Fevereiro</string>
+    <string name="text_month_march">Março</string>
+    <string name="text_month_april">April</string>
+    <string name="text_month_may">Maio</string>
+    <string name="text_month_june">Junho</string>
+    <string name="text_month_july">Julho</string>
+    <string name="text_month_august">Agosto</string>
+    <string name="text_month_september">Setembro</string>
+    <string name="text_month_october">Outubro</string>
+    <string name="text_month_november">Novembro</string>
+    <string name="text_month_december">Dezembro</string>
+
+    <!--Days of the week for Subject Form -->
+    <string name="text_day_monday_form">Segunda</string>
+    <string name="text_day_tuesday_form">Terça</string>
+    <string name="text_day_wednesday_form">Quarta</string>
+    <string name="text_day_thursday_form">Quinta</string>
+    <string name="text_day_friday_form">Sexta</string>
+    <string name="text_day_saturday_form">Sábado</string>
+    <string name="text_day_sunday_form">Domingo</string>
+
+    <!--Strings for screen printing -->
+    <string name="text_title_word">Título</string>
+    <string name="text_title_word_with_colon">Título:</string>
+    <string name="text_performance_word">Redimento</string>
+    <string name="text_question_word">N.Questões</string>
+    <string name="text_nb_topics_word">N.Tópicos</string>
+    <string name="text_subjects_word">Matérias</string>
+    <string name="text_subject_word">Matéria</string>
+    <string name="text_amount_of_subjects">Quantidade de matérias:</string>
+    <string name="text_tos_phrase">Organizador De Estudos\n Para Estudantes</string>
+    <string name="text_period_word">Período</string>
+    <string name="text_topics_title_word">Tópicos</string>
+
+
+
+    <!--Error Messages Auth -->
+    <string name="error_msg_auth_email_incorrect">E-mail não cadastrado ou incorreto.</string>
+    <string name="error_msg_email_invalid">Este email é inválido.</string>
+    <string name="error_msg_new_email_invalid">O novo email informado é inválido.</string>
+    <string name="error_msg_auth_password_incorrect">A senha está incorreta ou seu e-mail não estar registrado</string>
+
+    <!--Error Messages CreateAuth  -->
+    <string name="error_msg_create_email_registered">O e-mail já está cadastrado.</string>
+    <string name="error_msg_create_password_atleast_6">A senha deve conter pelo menos 6 caracteres.</string>
+    <string name="error_msg_no_connection_to_firebase">Sem conexão com o Firebase.</string>
+
+    <!--Generics -->
+    <string name="app_name">TOS</string>
+    <string name="text_hint_email">Email</string>
+    <string name="text_hint_confirm_email">Confirmar Email</string>
+    <string name="text_confirm_email">Confirmar Email:</string>
+    <string name="text_new_confirm_email">Confirmar Novo Email:</string>
+    <string name="text_hint_password">Senha</string>
+    <string name="text_hint_confirm_password">Confirmar Senha</string>
+    <string name="text_create_account">Não possui uma conta?\nClique Aqui!</string>
+    <string name="text_login_button">Login</string>
+    <string name="text_recover_password">"Você esqueceu a <b><i>senha</i></b>?"</string>
+    <string name="text_subjects_word_title">Matérias</string>
+    <string name="text_hello_name">Olá,</string>
+    <string name="text_initial_score">0</string>
+    <string name="text_hint_username">Nome do Usuário</string>
+    <string name="text_user_name">Nome de Usuário:</string>
+    <string name="text_new_username">Novo Nome de Usuário:</string>
+    <string name="text_email">Email:</string>
+    <string name="text_new_email">Novo Email:</string>
+    <string name="text_password">Senha:</string>
+    <string name="text_login">Entrar</string>
+    <string name="text_create">Criar</string>
+    <string name="text_category_view_calendar_screen">Conteúdos do Dia</string>
+    <string name="text_new_subject_words">Matéria Nova</string>
+    <string name="text_edit_subject_words">Editar Matéria</string>
+    <string name="text_new_subject_title">Título:</string>
+    <string name="text_new_category_frequency">Frequência:</string>
+    <string name="text_new_category_bgColor">Cor:</string>
+    <string name="text_logout">Sair?</string>
+    <string name="text_category_book">Título:</string>
+    <string name="text_topic_of_day">Tópicos da matéria:</string>
+    <string name="text_date">Data</string>
+    <string name="text_timer">Temporizador</string>
+    <string name="text_score_000_000">0/0</string>
+    <string name="text_day_monday">Segunda,</string>
+    <string name="text_day_tuesday">Terça,</string>
+    <string name="text_day_wednesday">Quarta,</string>
+    <string name="text_day_thursday">Quinta,</string>
+    <string name="text_day_friday">Sexta,</string>
+    <string name="text_day_saturday">Sábado,</string>
+    <string name="text_day_sunday">Domingo,</string>
+    <string name="text_timer_00_00_00">00:00:00</string>
+    <string name="text_error"><b>X</b></string>
+    <string name="text_new_topic_word">Novo Tópico</string>
+    <string name="text_edit_topic_word">Editar Tópico</string>
+    <string name="text_name_description">Descrição:</string>
+    <string name="text_content_description">Nada para ler!</string>
+    <string name="text_topic_registration_date">Segunda-feira, 30 de dezembro de 2023.</string>
+    <string name="text_search_date">--/--/----</string>
+    <string name="text_name_topics">Tópicos</string>
+    <string name="text_name_haveNo_topics">Clique no botão pesquisar e escolha uma data.</string>
+    <string name="text_no_topic_for_this_subject">Sem tópicos para esta matéria.</string>
+    <string name="text_nameTitle_description">Descrição</string>
+    <string name="text_error_score">00</string>
+    <string name="text_performance">Rendimento</string>
+    <string name="text_performance_number">0%</string>
+    <string name="text_delete_word">Deletar</string>
+    <string name="text_title_delete_dialog">Você deseja deletar?</string>
+    <string name="text_title_toast_msg_fields_form">Todos os campos são obrigatórios!</string>
+    <string name="text_toast_msg_field_required">O campo email é obrigatório!</string>
+    <string name="text_toast_topic_form">O título não poder ser nulo!</string>
+    <string name="text_topics_word">N.Tópicos</string>
+    <string name="text_questions_word">N.Questões</string>
+    <string name="text_print_out">Imprimir</string>
+    <string name="text_print_your_grid">Imprima a sua grade de matérias:</string>
+    <string name="text_print_your_blank_grid">Imprima a sua grade de matérias em branco.</string>
+    <string name="text_enter_number_of_lines">Digite o número de linhas:</string>
+    <string name="text_print_your_list_of_subject">Imprima a sua lista de matérias:</string>
+    <string name="text_one_subject_all_topics">Escolha uma matéria e imprima todos os tópicos:</string>
+    <string name="text_information_no_items_in_list">Não há itens para esta lista!</string>
+    <string name="text_information_no_items_in_list_for_date">Não há itens na lista para esta data!</string>
+    <string name="text_information_no_items_in_list_for_day">Não há itens na lista para este dia!</string>
+    <string name="text_word_generate">Gerar</string>
+    <string name="text_word_register">Registrar</string>
+    <string name="text_search_topics">Pesquisar Tópicos</string>
+    <string name="text_completed_total">Concluídas/Total:</string>
+    <string name="text_completed_topics_total">Concluídos/Total:</string>
+    <string name="text_total_performance">Redimento Geral:</string>
+    <string name="text_details_word">Detalhes</string>
+    <string name="text_account_details">Detalhes do Usuário</string>
+    <string name="text_remove_completed_subjects">Remover matérias concluídas da lista:</string>
+    <string name="text_version_app">Versão:</string>
+    <string name="text_edit_details">Editar Detalhes</string>
+    <string name="text_all_word">Todos</string>
+    <string name="text_home_word">Início</string>
+    <string name="text_settings_word">Configurações</string>
+    <string name="text_msg_log_out">Deseja sair da sua conta?</string>
+    <string name="text_msg_yes">Sim</string>
+    <string name="text_msg_no">Não</string>
+    <string name="text_infor_are_out_of_sync">Detectada alterações nos dados durante o uso off-line. Deseja sincronizar agora?</string>
+    <string name="text_word_now">Agora</string>
+    <string name="text_word_later">Depois</string>
+    <string name="text_synchronizing">Sincronizando dados…</string>
+    <string name="text_loading">Carregando dados…</string>
+    <string name="text_synchronizing_completed">Sincronização concluída!</string>
+    <string name="text_sync_failed">Falha na sincronização…</string>
+    <string name="text_word_again">Outra vez</string>
+    <string name="text_sync_list_size_zero">Não há itens para sincronização…</string>
+    <string name="text_you_must_beonline">Você precisa estar online!</string>
+    <string name="text_recovering_data">Recuperando dados…</string>
+    <string name="text_user_not_be_null">O usuário não pode ser inválido!</string>
+    <string name="text_thanks_for_your_download">Agradeçemos por fazer o \ndownload do nosso\n aplicativo!</string>
+    <string name="text_word_next">Próximo</string>
+    <string name="text_phrase_delete_acc">Deletar Conta?</string>
+    <string name="text_msg_infor_to_delete_acc">Ao clicar no botão abaixo você abrirá a caixa de diálogo para confirmação.</string>
+    <string name="text_are_you_sure">Tem certeza que deseja excluir a conta?</string>
+    <string name="text_thanks_for_your_time">Obrigado pelo seu tempo!</string>
+    <string name="text_changing_email">Processando mudança de  email…</string>
+    <string name="text_msg_failed_reauthenticate">Falha ao autenticar!</string>
+    <string name="text_msg_youmust_reauthenticate">Você deve se reautenticar para concluir as alterações.</string>
+    <string name="error_msg_no_internet_connection">Sem conexão com a internet.</string>
+    <string name="error_msg_fields_must_be_difference">Os campos devem ser diferentes.</string>
+    <string name="text_msg_username_changed">O nome de usuário mudou!</string>
+    <string name="have_conflicting_information">Há informações conflitantes.</string>
+    <string name="text_msg_email_change_completed">A alteração do e-mail foi concluída!</string>
+    <string name="text_enter_your_email">Informe o seu email que será enviado um link para redefinição da senha.</string>
+    <string name="text_word_send">Enviar</string>
+    <string name="text_msg_send_email_successfully"> Email foi enviado com sucesso.</string>
+    <string name="text_msg_sending_email_">Enviado Email…</string>
+    <string name="word_hour">Horas</string>
+    <string name="word_minutes">Minutos</string>
+    <string name="word_date">Data</string>
+    <string name="word_date_with_colon">Data:</string>
+    <string name="word_schedule">Horário</string>
+    <string name="word_schedule_with_colon">Horário:</string>
+    <string name="text_click_btn_choose_date">Clique no botão ao lado.</string>
+    <string name="text_msg_invalid_time">Horário inválido!</string>
+    <string name="text_msg_choose_date_title">Você deve escolher uma data e um título.</string>
+    <string name="word_revisions">Revisôes</string>
+    <string name="text_msn_information_password">* A senha precisa conter, no mínimo, 6 caracteres.\n* Recomendamos que contenha letras e números de forma aleatória.</string>
+    <string name="word_today">Hoje</string>
+    <string name="text_remove_informative_guide">Remover guia informativo:</string>
+    <string name="text_home_screen">Tela Inicial</string>
+    <string name="text_home_screen_register">* Você pode registrar, marcar como concluida e
+deletar as revisões.\n\n* Para deletar arraste o item para a direita ou para a esquerda.</string>
+    <string name="text_calendar_screen">Ao clicar em um item você terá acesso aos tópicos deste item que correspodem a data específica.</string>
+    <string name="text_subject_screen_register">* Você pode registrar, editar, marcar como concluida e
+deletar as matérias.\n\n* Para deletar arraste o item para a direita ou para a esquerda.\n* Arraste o item para cima ou para baixo para mudar a posição.</string>
+    <string name="text_topic_screen_register">* Você pode registrar, editar, marcar como concluido e
+deletar os tópicos.\n\n* Para deletar arraste o item para a direita ou para a esquerda.\n* Arraste o item para cima ou para baixo para mudar a posição.</string>
+    <string name="text_user_have_been_deleted">\n O usuário e os dados foram excluídos.</string>
+    <string name="text_offline_information">Todos os seus dados são salvos localmente, no seu dispositivo . Nenhum dado é coletado por nós. Agradecemos por escolher nosso aplicativo.</string>
+
+
+
+
+</resources>

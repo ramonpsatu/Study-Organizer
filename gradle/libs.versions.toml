@@ -1,0 +1,65 @@
+[versions]
+androidXNavigationFragmentVersion = "2.5.3"
+androidXConstraintlayoutVersion = "2.1.4"
+androidMaterialVersion = "1.8.0"
+androidXAppcompatVersion = "1.6.1"
+androidXCoreVerion = "1.9.0"
+androidXTestExtJunitVersion = "1.1.5"
+junitVersion = "4.13.2"
+coroutinesTestVersion = "1.6.4"
+roomVersion = "2.5.0"
+testXEspressoCoreVersion = "3.5.1"
+navSafeArgsVersion = "2.5.3"
+kotlinVersion = "1.8.0"
+gradleVersion = "8.0.0"
+serializationJosonVeriosn = "1.8.10"
+kotlinXSrializationJsonVersion = "1.5.0"
+androidMterialVersion = "1.8.0"
+androidxAppcompatVersion = "1.6.1"
+dataStoreVersion = "1.0.0"
+hiltVersion = "2.47"
+androidXLifecycleVersion = "2.5.1"
+legacySupportV4 = "1.0.0"
+
+
+[libraries]
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "androidXNavigationFragmentVersion" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "androidXNavigationFragmentVersion" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidXConstraintlayoutVersion" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompatVersion" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version = "1.10.1" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version = "2.5.2" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version = "2.5.2" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.7.3" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinXSrializationJsonVersion" }
+test-junit = { module = "junit:junit", version.ref = "junitVersion" }
+androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidXTestExtJunitVersion" }
+androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "testXEspressoCoreVersion" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version = "1.7.3" }
+android-material = { module = "com.google.android.material:material", version = "1.9.0" }
+androidx-data-store = { module = "androidx.datastore:datastore-preferences", version.ref = "dataStoreVersion" }
+androidx-legacy = {module = "androidx.legacy:legacy-support-v4", version.ref = "legacySupportV4"}
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidXLifecycleVersion" }
+androidx-lifecycle-livedata-ktx = {module = "androidx.lifecycle:lifecycle-livedata-ktx", version = "2.6.1" }
+androidx-lifecycle-viewmodel-ktx = {module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version = "2.6.1" }
+
+
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltVersion" }
+
+
+
+[bundles]
+navigation = ["androidx-navigation-fragment-ktx", "androidx-navigation-ui-ktx"]
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradleVersion" }
+android-library = { id = "com.android.library", version.ref = "gradleVersion" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "serializationJosonVeriosn" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serializationJosonVeriosn" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinVersion" }
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_confirm_email">Confirm Email:</string>
+    <string name="text_create_account_title">Criar Conta</string>
+    <string name="text_confirm_password">Confirmar Senha:</string>
+    <string name="acc_successfully_created">Conta criada com sucesso.</string>
+    <string name="login_completed_successfully">Login concluído com sucesso.</string>
+    <string name="texte_i_get_it">Entendi</string>
+
+
+</resources>

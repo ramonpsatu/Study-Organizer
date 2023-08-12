@@ -1,0 +1,69 @@
+
+<resources>
+
+    <!--Margin dimensions -->
+    <dimen name="marginTop_to_button">1000dp</dimen>
+
+    <!--Values to Login screen-->
+    <dimen name="margin_top_logo_app_login_screen">120dp</dimen>
+    <dimen name="width_logo_app_login_screen">250dp</dimen>
+    <dimen name="height_logo_app_login_screen">202dp</dimen>
+    <dimen name="margin_top_per100_login_screen">152dp</dimen>
+    <dimen name="edit_text_width_login__screen">300dp</dimen>
+    <dimen name="margin_top_tbnLog_login_screen">72dp</dimen>
+    <dimen name="margin_top_tbnCreate_login_screen">264dp</dimen>
+
+
+
+
+    <!--Values to Create Account screen-->
+    <dimen name="margin_top_logo_app_create_acc_screen">80dp</dimen>
+    <dimen name="width_logo_app_create_acc_screen">250dp</dimen>
+    <dimen name="height_logo_app_create_acc_screen">202dp</dimen>
+    <dimen name="margin_top_tos_text_create_acc_screen">204dp</dimen>
+    <dimen name="text_size_tos_text_create_acc_screen">21sp</dimen>
+    <dimen name="text_size_title_create_acc_screen">28sp</dimen>
+    <dimen name="text_size_texts_create_acc_screen">16sp</dimen>
+    <dimen name="margin_top_view_o_create_acc_screen">216dp</dimen>
+    <dimen name="margin_start_view_t_create_acc_screen">48dp</dimen>
+    <dimen name="margin_start_tbn_information_create_acc_screen">16dp</dimen>
+    <dimen name="margin_end_view_s_create_acc_screen">48dp</dimen>
+    <dimen name="edit_text_width_create_acc_screen">360dp</dimen>
+    <dimen name="margin_top_username_create_acc_screen">136dp</dimen>
+
+    <!--Values to Calendar screen-->
+    <dimen name="margin_start_tbn_m_calendar_screen">16dp</dimen>
+    <dimen name="margin_end_tbn_S_calendar_screen">16dp</dimen>
+
+    <!--Values to SubjectForm screen-->
+    <dimen name="margin_top_title_subject_form_screen">64dp</dimen>
+    <dimen name="margin_top_view1_subject_form_screen">56dp</dimen>
+    <dimen name="margin_top_view2_subject_form_screen">56dp</dimen>
+
+
+    <!--Values to Topic Content Layout-->
+    <dimen name="margin_top_title_topic_conte_layout">24dp</dimen>
+    <dimen name="margin_bottom_checkbox_topic_conte_layout">12dp</dimen>
+
+    <!--Values to Topic Content Layout show in search screen-->
+    <dimen name="margin_start_title_topic_search_layout">32dp</dimen>
+    <dimen name="margin_top_title_topic_search_layout">16dp</dimen>
+
+    <!--Values to Research Topic screen-->
+    <dimen name="width_ediText_research_topic_screen">260dp</dimen>
+
+    <!--Values to Print Out screen-->
+    <dimen name="margin_top_view1_print_out_screen">184dp</dimen>
+    <dimen name="margin_top_view2_print_out_screen">56dp</dimen>
+    <dimen name="margin_top_view3_print_out_screen">104dp</dimen>
+    <dimen name="margin_top_exhibition1_print_out_screen">48dp</dimen>
+    <dimen name="margin_top_exhibition2_print_out_screen">40dp</dimen>
+    <dimen name="width_recycle_view_print_out_screen">538dp</dimen>
+    <dimen name="height_recycle_view_print_out_screen">568dp</dimen>
+    <dimen name="width_card_view_print_out_screen">260dp</dimen>
+    <dimen name="height_card_view_print_out_screen">271dp</dimen>
+    <dimen name="text_size_texts_print_out_screen">18sp</dimen>
+    <dimen name="height_edit_text_print_out_screen">72dp</dimen>
+    <dimen name="width_edit_text_print_out_screen">72dp</dimen>
+
+</resources>

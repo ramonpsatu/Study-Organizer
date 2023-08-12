@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.ramonpsatu.studyorganizer.core.ui'
+    compileSdk 33
+    compileSdk rootProject.ext.sdkVersion
+    defaultConfig {
+        targetSdk targetVersion
+        minSdk minVersion
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

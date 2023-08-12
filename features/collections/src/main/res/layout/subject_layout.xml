@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:layout_margin="4dp"
+    tools:ignore="TextSizeCheck">
+
+
+    <ImageView
+        android:id="@+id/imageView_ic_background_subject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background_75alpha"
+        android:backgroundTint="@color/white_minus_3"
+        android:contentDescription="@string/contentDescription_background_subject_field"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:breakStrategy="high_quality"
+        style="@style/Opens_Sans_Regular_H4_16"
+        android:gravity="start"
+        android:maxLength="75"
+        android:maxLines="4"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/text_subject_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/textView_performance_number"
+        app:layout_constraintStart_toStartOf="@+id/textView_title_word"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title_word" />
+
+    <ImageView
+        android:id="@+id/ic_task_edit_category"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/contentDescription_edit_button"
+        android:padding="4dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@id/imageView_ic_background_subject"
+        app:layout_constraintEnd_toEndOf="@+id/textView_title" />
+
+    <ImageView
+        android:id="@+id/ic_task_checkList"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:contentDescription="@string/contentDescription_research_button"
+        android:padding="4dp"
+        android:src="@drawable/ic_search_topics"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_task_edit_category"
+        app:layout_constraintEnd_toStartOf="@+id/ic_task_edit_category"
+        app:layout_constraintStart_toEndOf="@+id/i_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/ic_task_edit_category"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView_performance_of_day"
+        style="@style/Opens_Sans_Bold_S_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_performance"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView_performance_number"
+        app:layout_constraintEnd_toEndOf="@+id/textView_questions_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_questions_of_day" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_background_texts_fields"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView_performance_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_performance_of_day"
+        app:layout_constraintTop_toBottomOf="@+id/textView_performance_of_day" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_background_texts_fields"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView_performance_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_performance_of_day"
+        app:layout_constraintTop_toBottomOf="@+id/textView_questions_of_day" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_background_texts_fields"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView_performance_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_performance_of_day"
+        app:layout_constraintTop_toBottomOf="@+id/textView_topics_of_day" />
+
+    <TextView
+        android:id="@+id/textView_score_task"
+        style="@style/Opens_Sans_Regular_H4_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="@string/text_score_000_000"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_task_checkList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_questions_number"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView_performance_number"
+        style="@style/Opens_Sans_Regular_H4_16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/text_performance_number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView_performance_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_performance_of_day"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_questions_of_day"
+        style="@style/Opens_Sans_Bold_S_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_questions_word"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView_questions_number"
+        app:layout_constraintEnd_toEndOf="@+id/textView_topics_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_topics_of_day" />
+
+    <TextView
+        android:id="@+id/textView_questions_number"
+        style="@style/Opens_Sans_Regular_H4_16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/text_initial_score"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView_questions_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_questions_of_day"
+        app:layout_constraintTop_toBottomOf="@+id/textView_performance_number" />
+
+    <TextView
+        android:id="@+id/textView_topics_of_day"
+        style="@style/Opens_Sans_Bold_S_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/text_topics_word"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView_score_task"
+        app:layout_constraintEnd_toEndOf="@+id/textView_score_task"
+        app:layout_constraintStart_toStartOf="@+id/textView_score_task" />
+
+    <TextView
+        android:id="@+id/textView_title_word"
+        style="@style/Opens_Sans_Bold_H4_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_new_subject_title"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/i_checkbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/contentDescription_show_isCompleted_checkbox"
+        android:padding="4dp"
+        android:src="@drawable/ic_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_task_checkList"
+        app:layout_constraintStart_toStartOf="@+id/textView_title_word" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

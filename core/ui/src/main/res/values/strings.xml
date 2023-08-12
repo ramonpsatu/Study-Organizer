@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- First Letters-->
+    <string name="firstLetter_day_monday">M</string>
+    <string name="firstLetter_day_tuesday">T</string>
+    <string name="firstLetter_day_wednesday">W</string>
+    <string name="firstLetter_day_thursday">T</string>
+    <string name="firstLetter_day_friday">F</string>
+    <string name="firstLetter_day_saturday">S</string>
+    <string name="firstLetter_day_sunday">S</string>
+
+    <!-- Number of the day-->
+    <string name="number_of_the_day_monday">12</string>
+    <string name="number_of_the_day_tuesday">13</string>
+    <string name="number_of_the_day_wednesday">14</string>
+    <string name="number_of_the_day_thursday">15</string>
+    <string name="number_of_the_day_friday">16</string>
+    <string name="number_of_the_day_saturday">17</string>
+    <string name="number_of_the_day_sunday">18</string>
+
+    <!--Content Description-->
+    <string name="contentDescription_logo_image">Application logo Task Organizer for Students</string>
+    <string name="contentDescription_main_calendar">Navigation to Main Calender screen</string>
+    <string name="contentDescription_new_subject">Create new subject</string>
+    <string name="contentDescription_print_out_pdf">Print report in PDF</string>
+    <string name="contentDescription_page_binding">Page binding</string>
+    <string name="contentDescription_btnReturn_subject_screen">Return to subjects edit screen</string>
+    <string name="contentDescription_information_image">Navigation to information screen</string>
+    <string name="contentDescription_save_button">Save</string>
+    <string name="contentDescription_create_button">Create account</string>
+    <string name="contentDescription_open_button">Open</string>
+    <string name="contentDescription_login_button">Log in an account</string>
+    <string name="contentDescription_icon_username">Icon corresponding to the username</string>
+    <string name="contentDescription_icon_password">Icon corresponding to the password</string>
+    <string name="contentDescription_create_topic_button">Create a new topic for subject</string>
+    <string name="contentDescription_timer_button">Navigation to timer screen</string>
+    <string name="contentDescription_research_button">Choose a date to search for topics</string>
+    <string name="contentDescription_return_button">Return to topics screen</string>
+    <string name="contentDescription_background_subject_field">Subject field</string>
+    <string name="contentDescription_edit_button">Edit Subject</string>
+    <string name="contentDescription_show_isCompleted_checkbox">Indicates the status of the item if it is complete or not.</string>
+    <string name="contentDescription_show_topic_list">Navigation to topics screen</string>
+    <string name="contentDescription_text_match">Match</string>
+    <string name="contentDescription_text_error">Errors</string>
+    <string name="contentDescription_button_back">Back to previous screen.</string>
+    <string name="text_back">Back</string>
+
+    <!--Months of the year -->
+    <string name="text_month_january">January</string>
+    <string name="text_month_february">February</string>
+    <string name="text_month_march">March</string>
+    <string name="text_month_april">April</string>
+    <string name="text_month_may">May</string>
+    <string name="text_month_june">June</string>
+    <string name="text_month_july">July</string>
+    <string name="text_month_august">August</string>
+    <string name="text_month_september">September</string>
+    <string name="text_month_october">October</string>
+    <string name="text_month_november">November</string>
+    <string name="text_month_december">December</string>
+
+
+    <!--Days of the week for Subject Form -->
+    <string name="text_day_monday_form">Monday</string>
+    <string name="text_day_tuesday_form">Tuesday</string>
+    <string name="text_day_wednesday_form">Wednesday</string>
+    <string name="text_day_thursday_form">Thursday</string>
+    <string name="text_day_friday_form">Friday</string>
+    <string name="text_day_saturday_form">Saturday</string>
+    <string name="text_day_sunday_form">Sunday</string>
+
+    <!--Strings for screen printing -->
+    <string name="text_title_word">Title</string>
+    <string name="text_title_word_with_colon">Title:</string>
+    <string name="text_performance_word">Performance</string>
+    <string name="text_question_word">N.Questions</string>
+    <string name="text_nb_topics_word">N.Topics</string>
+    <string name="text_subjects_word">Subjects</string>
+    <string name="text_subject_word">Subject</string>
+    <string name="text_tos_phrase">Student Study\n Organizer</string>
+    <string name="text_amount_of_subjects">Amount of subjects:</string>
+    <string name="text_period_word">Period</string>
+    <string name="text_topics_title_word">Topics</string>
+
+
+    <!--Strings for alertDialog screen printing-->
+    <string name="text_dialog_activity">PDF file generated successfully.</string>
+    <string name="text_dialog_activity_browser_button">Navigate</string>
+    <string name="text_dialog_activity_remain_button">remain</string>
+    <string name="text_dialog_activity_understood_button" translatable="false">OK</string>
+    <string name="text_dialog_activity_exists">The file has been saved in Storage > Internal Memory > TOS-PDFs.
+
+        \n\nDepending on your device\s Android version, the file will automatically appear in Download or Recent Documents in your file manager.
+
+        \n\nOtherwise manually navigate to  settings > Storage > Internal Memory > Download > TOS-PDFs.
+
+        \n\nIf you want to be redirected to Download click on the browse button.
+    </string>
+    <string name="text_dialog_activity_no_exists">The file has been saved in Storage > Internal Memory > Download.
+    \n\nA targeting resource for the file location was not detected.
+
+   \n\nManually navigate to your file manager or settings > Storage > Internal Memory > Download.
+    </string>
+    <string name="text_dialog_permissions">Permissions were denied.</string>
+    <string name="text_dialog_permissions_message">To use the PDF generation features, you need to accept the permissions.\nYou should manually navigate to App information and confirm the permissions.
+    </string>
+    <string name="text_permissions_granted">Permissions Granted!</string>
+    <string name="text_warning_only_subjects">Choose only a subject!!</string>
+    <string name="text_warning_a_subjects">Choose a subject!!</string>
+    <string name="text_warning_grid_empty">The subject grid is empty!!</string>
+    <string name="text_warning_field_cannot_null">The field cannot be null!!</string>
+    <string name="text_warning_subject_list_empty">The subject list is empty!!</string>
+    <string name="text_warning_topic_list_empty_for_subject">This subject has no topics!!</string>
+    <string name="text_warning_pdf_generated_successfully">PDF file generated successfully!</string>
+    <string name="text_to_add">Add</string>
+    <string name="text_to_generate">Generate</string>
+    <string name="text_calendar">Calendar</string>
+    <string name="text_research">Research</string>
+    <string name="text_amount_of_questions">Amount of Questions:</string>
+    <string name="text_register_word">Register</string>
+    <string name="tos_all_topics_with_the_subject">TOS_All subject topics.pdf</string>
+    <string name="tos_list_of_subject">TOS_List of subjects.pdf</string>
+    <string name="tos_grid_of_subject">TOS_Grid of subjects.pdf</string>
+    <string name="tos_blank_subject_grid">TOS_Blank subject grid.pdf</string>
+
+    <!--Error Messages Auth  -->
+    <string name="error_msg_auth_email_incorrect">Email not registered or incorrect.</string>
+    <string name="error_msg_email_invalid">This email is invalid.</string>
+    <string name="error_msg_new_email_invalid">The new email entered is invalid.</string>
+    <string name="error_msg_auth_password_incorrect">Password is incorrect or your Email is not registered.</string>
+
+    <!--Error Messages CreateAuth  -->
+    <string name="error_msg_create_email_registered">The email is already registered.</string>
+    <string name="error_msg_create_password_atleast_6">The password must contain at least 6 characters.</string>
+    <string name="error_msg_no_connection_to_firebase">No connection to firebase.</string>
+
+
+
+    <!--Generics -->
+    <string name="app_name">TOS</string>
+    <string name="text_hint_email">Email</string>
+    <string name="text_hint_confirm_email">Confirm Email</string>
+    <string name="text_confirm_email">Confirm New Email:</string>
+    <string name="text_new_confirm_email">Confirm New Email:</string>
+    <string name="text_hint_password">Password</string>
+    <string name="text_hint_confirm_password">Confirm Password</string>
+    <string name="text_create_account">Don\'t have an account?\nClick Here!</string>
+    <string name="text_login_button">Log in</string>
+    <string name="text_recover_password">"Did you forget your <b><i>password</i></b>?"</string>
+    <string name="text_subjects_word_title">Subjects</string>
+    <string name="text_hello_name">Hello,</string>
+    <string name="text_hello_username" translatable="false">Hello, Elanny Mirelly!</string>
+    <string name="text_initial_score">0</string>
+    <string name="text_hint_username">User Name</string>
+    <string name="text_user_name">User Name:</string>
+    <string name="text_new_username">New Username:</string>
+    <string name="text_email">Email:</string>
+    <string name="text_new_email">New Email:</string>
+    <string name="text_password">Password:</string>
+    <string name="text_login">Log in</string>
+    <string name="text_create">Create</string>
+    <string name="text_category_view_calendar_screen">Contents of the Day</string>
+    <string name="text_new_subject_words">New Subject</string>
+    <string name="text_edit_subject_words">Edit Subject</string>
+    <string name="text_new_subject_title">Title:</string>
+    <string name="text_new_category_frequency">Frequency:</string>
+    <string name="text_new_category_bgColor">Color:</string>
+    <string name="text_logout">Log out?</string>
+    <string name="text_subject_title" translatable="false"><p>12345678901234567890123456789012345678901234567890123456790123456789012345</p></string>
+    <string name="text_topic_title" translatable="false"><p>12345678901234567890123456789012345678901234567890123456790123456789012345</p></string>
+    <string name="text_category_book">Title:</string>
+    <string name="text_topic_of_day">Subject topics:</string>
+    <string name="text_date">Date</string>
+    <string name="text_timer">Timer</string>
+    <string name="text_score_000_000">0/0</string>
+    <string name="text_day_monday">Monday,</string>
+    <string name="text_day_tuesday">Tuesday,</string>
+    <string name="text_day_wednesday">Wednesday,</string>
+    <string name="text_day_thursday">Thursday,</string>
+    <string name="text_day_friday">Friday,</string>
+    <string name="text_day_saturday">Saturday,</string>
+    <string name="text_day_sunday">Sunday,</string>
+    <string name="text_timer_00_00_00">00:00:00</string>
+    <string name="text_error"><b>X</b></string>
+    <string name="text_new_topic_word">New Topic</string>
+    <string name="text_edit_topic_word">Edit Topic</string>
+    <string name="text_name_description">Description:</string>
+    <string name="text_content_description">Nothing to read!</string>
+    <string name="text_topic_registration_date">Monday, December 30, 2023.</string>
+    <string name="text_search_date">--/--/----</string>
+    <string name="text_name_topics">Topics</string>
+    <string name="text_name_haveNo_topics">Click the search button and choose a date.</string>
+    <string name="text_no_topic_for_this_subject">There are no topics for this subject.</string>
+    <string name="text_nameTitle_description">Description</string>
+    <string name="text_error_score">00</string>
+    <string name="text_performance">Performance</string>
+    <string name="text_performance_number">0%</string>
+    <string name="text_delete_word">Delete</string>
+    <string name="text_title_delete_dialog">Do you want to delete?</string>
+    <string name="text_title_toast_msg_fields_form">All fields are mandatory!</string>
+    <string name="text_toast_msg_field_required">The email field is required!</string>
+    <string name="text_toast_topic_form">The title field must not be null!</string>
+    <string name="text_topics_word">N.Topics</string>
+    <string name="text_questions_word">N.Questions</string>
+    <string name="text_print_out">Print out</string>
+    <string name="text_print_your_grid">Print your subject grid:</string>
+    <string name="text_print_your_blank_grid">Print your blank subject grid.</string>
+    <string name="text_enter_number_of_lines">Enter the number of lines:</string>
+    <string name="text_print_your_list_of_subject">Print your list of subjects:</string>
+    <string name="text_one_subject_all_topics">Choose a subject and print all the topics:</string>
+    <string name="text_information_no_items_in_list">There are no items for this list!</string>
+    <string name="text_information_no_items_in_list_for_date">There are no items on the list for this date!</string>
+    <string name="text_information_no_items_in_list_for_day">There are no items on the list for this day!</string>
+    <string name="text_word_generate">Generate</string>
+    <string name="text_word_register">Register</string>
+    <string name="text_search_topics">Search Topics</string>
+    <string name="text_completed_total">Completed/Total:</string>
+    <string name="text_completed_topics_total">Completed/Total:</string>
+    <string name="text_total_performance">Total Performance:</string>
+    <string name="text_details_word">Details</string>
+    <string name="text_account_details">User Details</string>
+    <string name="text_remove_completed_subjects">Remove completed subjects from the list:</string>
+    <string name="text_version_app">Version:</string>
+    <string name="text_edit_details">Edit Details</string>
+    <string name="text_all_word">All</string>
+    <string name="text_home_word">Home</string>
+    <string name="text_settings_word">Settings</string>
+    <string name="text_msg_log_out">Do you want to log out of your account?</string>
+    <string name="text_msg_yes">Yes</string>
+    <string name="text_msg_no">No</string>
+    <string name="text_infor_are_out_of_sync">Data changes detected during offline use. Do you want to sync now?</string>
+    <string name="text_word_now">Now</string>
+    <string name="text_word_later">Later</string>
+    <string name="text_synchronizing">Synchronizing data…</string>
+    <string name="text_loading">Loading data…</string>
+    <string name="text_synchronizing_completed">Synchronization completed!</string>
+    <string name="text_sync_failed">Synchronization failed…</string>
+    <string name="text_word_again">Again</string>
+    <string name="text_sync_list_size_zero">There are no items to synchronization…</string>
+    <string name="text_you_must_beonline">You must be online!</string>
+    <string name="text_recovering_data">Recovering data…</string>
+    <string name="text_user_not_be_null">The user must not be invalid!</string>
+    <string name="text_thanks_for_your_download">Thanks for downloading\n our app!</string>
+    <string name="text_word_next">Next</string>
+    <string name="text_phrase_delete_acc">Delete Account?</string>
+    <string name="text_msg_infor_to_delete_acc">Clicking the button below will open the confirmation dialog.</string>
+    <string name="text_are_you_sure">Are you sure you want to delete the account?</string>
+    <string name="text_thanks_for_your_time">Thank\'s for your time!</string>
+    <string name="text_changing_email">Processing email change…</string>
+    <string name="text_msg_failed_reauthenticate">Failed to authenticate!</string>
+    <string name="text_msg_youmust_reauthenticate">You must reauthenticate to complete the changes.</string>
+    <string name="error_msg_no_internet_connection">No internet connection.</string>
+    <string name="error_msg_fields_must_be_difference">The fields must be different.</string>
+    <string name="text_msg_username_changed">The username has changed!</string>
+    <string name="have_conflicting_information">There is conflicting information.</string>
+    <string name="text_msg_email_change_completed">The email change is complete!</string>
+    <string name="text_enter_your_email">Enter your email and a link to reset your password will be sent.</string>
+    <string name="text_word_send">Send</string>
+    <string name="text_msg_send_email_successfully"> Email was successfully sent.</string>
+    <string name="text_msg_sending_email_">Sending Email…</string>
+    <string name="word_hour">Hours</string>
+    <string name="word_minutes">Minutes</string>
+    <string name="word_date">Date</string>
+    <string name="word_date_with_colon">Date:</string>
+    <string name="word_schedule">Schedule</string>
+    <string name="word_schedule_with_colon">Schedule:</string>
+    <string name="text_click_btn_choose_date">Click on the button on the side.</string>
+    <string name="text_msg_invalid_time">Invalid time!</string>
+    <string name="text_msg_choose_date_title">You must choose a date and title.</string>
+    <string name="word_revisions">Revisions</string>
+    <string name="text_msn_information_password">* The password must contain at least 6 characters.\n* We recommend that it contain letters and numbers randomly.</string>
+    <string name="word_today">Today</string>
+    <string name="text_remove_informative_guide">Remove informational guide:</string>
+    <string name="text_home_screen">Home Screen</string>
+    <string name="text_home_screen_register">* You can register, mark as completed, and
+    delete revisions.\n\n* To delete drag the item left or right.</string>
+    <string name="text_calendar_screen">By clicking on an item you will have access to the topics of this item that correspond to the specific date.</string>
+    <string name="text_subject_screen_register">* You can register, edit, mark as completed and
+    delete subjects.\n\n* To delete drag the item left or right.\n* Drag the item up or down to change the position.</string>
+    <string name="text_topic_screen_register">* You can register, edit, mark as completed and
+    delete topics.\n\n* To delete drag the item left or right.\n* Drag the item up or down to change the position.</string>
+    <string name="text_user_have_been_deleted">\n The User and data have been deleted.</string>
+    <string name="text_offline_information">All your data is saved locally on your device. No data is collected by us. Thanks for choosing our app.</string>
+
+
+
+</resources>

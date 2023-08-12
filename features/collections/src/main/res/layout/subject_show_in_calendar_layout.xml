@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:layout_margin="4dp"
+    tools:ignore="TextSizeCheck">
+
+
+    <ImageView
+        android:id="@+id/imageView_ic_background_task_book"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background_75alpha"
+        android:backgroundTint="@color/white_minus_3"
+        android:contentDescription="@string/contentDescription_background_subject_field"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView_score_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_background_texts_fields"
+        android:backgroundTint="@color/white"
+        style="@style/Opens_Sans_Regular_H4_16"
+        android:gravity="center"
+        android:text="@string/text_score_000_000"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView_topics_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_topics_of_day"
+        app:layout_constraintTop_toBottomOf="@+id/textView_topics_of_day" />
+
+    <TextView
+        android:id="@+id/editText_title"
+        style="@style/Opens_Sans_Regular_H4_16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:breakStrategy="high_quality"
+        android:gravity="start"
+        android:maxLength="75"
+        android:maxLines="3"
+        android:paddingEnd="4dp"
+        android:text="@string/text_subject_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_title_word"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title_word" />
+
+    <TextView
+        android:id="@+id/textView_performance_of_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/text_performance"
+        android:textColor="@color/black"
+        style="@style/Opens_Sans_Bold_S_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_questions_of_day"
+        app:layout_constraintStart_toEndOf="@+id/imageView_ic_background_task_book"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_performance_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_background_texts_fields"
+        android:backgroundTint="@color/white"
+        style="@style/Opens_Sans_Regular_H4_16"
+        android:gravity="center"
+        android:text="@string/text_performance_number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView_performance_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_performance_of_day"
+        app:layout_constraintTop_toBottomOf="@+id/textView_performance_of_day" />
+
+    <TextView
+        android:id="@+id/textView_questions_of_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/text_questions_word"
+        android:textColor="@color/black"
+        style="@style/Opens_Sans_Bold_S_12"
+        app:layout_constraintEnd_toStartOf="@+id/textView_topics_of_day"
+        app:layout_constraintStart_toEndOf="@+id/textView_performance_of_day"
+        app:layout_constraintTop_toTopOf="@+id/textView_performance_of_day" />
+
+    <TextView
+        android:id="@+id/textView_topics_of_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Opens_Sans_Bold_S_12"
+        android:gravity="center"
+        android:text="@string/text_topics_word"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_questions_of_day"
+        app:layout_constraintTop_toTopOf="@+id/textView_questions_of_day" />
+
+    <TextView
+        android:id="@+id/textView_questions_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_background_texts_fields"
+        android:backgroundTint="@color/white"
+        style="@style/Opens_Sans_Regular_H4_16"
+        android:gravity="center"
+        android:text="@string/text_initial_score"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView_questions_of_day"
+        app:layout_constraintStart_toStartOf="@+id/textView_questions_of_day"
+        app:layout_constraintTop_toBottomOf="@+id/textView_questions_of_day" />
+
+    <TextView
+        android:id="@+id/textView_title_word"
+        style="@style/Opens_Sans_Bold_H4_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_new_subject_title"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

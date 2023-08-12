@@ -1,0 +1,6 @@
+
+<resources>
+    <!--Margin dimensions -->
+    <dimen name="marginTop_to_button">768dp</dimen>
+    <!--Text dimensions -->
+</resources>

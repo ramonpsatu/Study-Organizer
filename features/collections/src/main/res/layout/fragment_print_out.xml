@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_minus_1"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@drawable/ic_header"
+            android:elevation="4dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_title_screen"
+            style="@style/Opens_Sans_Bold_H3_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:elevation="4dp"
+            android:text="PDFs"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:ignore="HardcodedText" />
+        <!--#DAD7D7-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView_print_out"
+            android:layout_width="@dimen/width_recycle_view_print_out_screen"
+            android:layout_height="@dimen/height_recycle_view_print_out_screen"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_background_colors"
+            android:backgroundTint="#DAD7D7"
+            android:minWidth="300dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_exhibition_5"
+            tools:listitem="@layout/subject_cardview_layout" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_print_out_subject_list_with_topics"
+            style="@style/buttons_tertiary_minus_1"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/text_word_generate"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_exhibition_5"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView_exhibition_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/text_one_subject_all_topics"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_texts_print_out_screen"
+            app:layout_constraintEnd_toStartOf="@+id/button_print_out_subject_list_with_topics"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_3" />
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/margin_top_view3_print_out_screen"
+            android:background="@drawable/ic_background_texts_fields"
+            android:backgroundTint="#CFCBCB"
+            app:layout_constraintEnd_toEndOf="@+id/view_2"
+            app:layout_constraintStart_toStartOf="@+id/view_2"
+            app:layout_constraintTop_toBottomOf="@+id/view_2" />
+
+        <TextView
+            android:id="@+id/textView_exhibition_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_exhibition2_print_out_screen"
+            android:fontFamily="@font/open_sans"
+            android:paddingStart="4dp"
+            android:text="@string/text_print_your_list_of_subject"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_texts_print_out_screen"
+            app:layout_constraintEnd_toStartOf="@+id/button_print_out_subject_list"
+            app:layout_constraintStart_toStartOf="@+id/textView_exhibition_2"
+            app:layout_constraintTop_toBottomOf="@+id/view_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_print_out_subject_list"
+            style="@style/buttons_tertiary_minus_1"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="@string/text_word_generate"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_exhibition_4"
+            app:layout_constraintEnd_toEndOf="@+id/button_print_out_blank_subject_grid"
+            app:layout_constraintStart_toStartOf="@+id/button_print_out_blank_subject_grid"
+            app:layout_constraintTop_toTopOf="@+id/textView_exhibition_4"
+            tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="@dimen/margin_top_view1_print_out_screen"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_background_texts_fields"
+            android:backgroundTint="#CFCBCB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/margin_top_view2_print_out_screen"
+            android:background="@drawable/ic_background_texts_fields"
+            android:backgroundTint="#CFCBCB"
+            app:layout_constraintEnd_toEndOf="@+id/view1"
+            app:layout_constraintStart_toStartOf="@+id/view1"
+            app:layout_constraintTop_toBottomOf="@+id/button_print_out_blank_subject_grid" />
+
+        <TextView
+            android:id="@+id/textView_exhibition_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/margin_top_exhibition1_print_out_screen"
+            android:fontFamily="@font/open_sans"
+            android:paddingStart="4dp"
+            android:text="@string/text_print_your_grid"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_texts_print_out_screen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_print_out_grid_of_subjects"
+            style="@style/buttons_tertiary_minus_1"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/text_word_generate"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_exhibition_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_exhibition_1"
+            tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView_exhibition_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_exhibition2_print_out_screen"
+            android:fontFamily="@font/open_sans"
+            android:paddingStart="4dp"
+            android:text="@string/text_print_your_blank_grid"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_texts_print_out_screen"
+            app:layout_constraintEnd_toStartOf="@+id/button_print_out_blank_subject_grid"
+            app:layout_constraintStart_toStartOf="@+id/view1"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <EditText
+            android:id="@+id/editText_row_size"
+            android:layout_width="@dimen/width_edit_text_print_out_screen"
+            android:layout_height="@dimen/height_edit_text_print_out_screen"
+            android:layout_marginStart="24dp"
+            android:autofillHints="name"
+            android:background="@drawable/ic_background_field_stroke_black"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:hint="@string/text_error_score"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/colorPrimary_plus_1"
+            android:textSize="@dimen/text_size_texts_print_out_screen"
+            app:layout_constraintEnd_toStartOf="@+id/button_print_out_blank_subject_grid"
+            app:layout_constraintStart_toEndOf="@+id/textView_exhibition_3"
+            app:layout_constraintTop_toBottomOf="@+id/textView_exhibition_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_print_out_blank_subject_grid"
+            style="@style/buttons_tertiary_minus_1"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="@string/text_word_generate"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_row_size"
+            app:layout_constraintEnd_toEndOf="@+id/button_print_out_grid_of_subjects"
+            app:layout_constraintStart_toStartOf="@+id/button_print_out_grid_of_subjects"
+            app:layout_constraintTop_toBottomOf="@+id/textView_exhibition_2"
+            tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView_exhibition_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:paddingStart="4dp"
+            android:text="@string/text_enter_number_of_lines"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_texts_print_out_screen"
+            app:layout_constraintStart_toStartOf="@+id/textView_exhibition_2"
+            app:layout_constraintTop_toBottomOf="@+id/textView_exhibition_2" />
+
+        <TextView
+            android:id="@+id/textView_exhibition_infor"
+            style="@style/Opens_Sans_Bold_H4_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:text="@string/text_information_no_items_in_list"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/recycleView_print_out"
+            app:layout_constraintEnd_toEndOf="@+id/recycleView_print_out"
+            app:layout_constraintStart_toStartOf="@+id/recycleView_print_out"
+            app:layout_constraintTop_toTopOf="@+id/recycleView_print_out" />
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/marginTop_to_button"
+            android:clickable="false"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/root_alert_dialog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#9F333333"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+
+            <View
+                android:id="@+id/view19"
+                android:layout_width="320dp"
+                android:layout_height="156dp"
+                android:background="@drawable/ic_bg_description_layout"
+                android:backgroundTint="@color/white_minus_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.521" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/Opens_Sans_Bold_H4_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_dialog_permissions"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/view19"
+                app:layout_constraintTop_toTopOf="@+id/view19" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="293dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="16dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/text_dialog_permissions_message"
+                app:layout_constraintEnd_toEndOf="@+id/view19"
+                app:layout_constraintHorizontal_bias="0.518"
+                app:layout_constraintStart_toStartOf="@+id/view19"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

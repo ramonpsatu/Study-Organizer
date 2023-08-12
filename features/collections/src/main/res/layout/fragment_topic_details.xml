@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg_cards"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="330dp"
+        android:layout_height="422dp"
+        android:background="@drawable/ic_buttons"
+        android:backgroundTint="@color/colorPrimaryVariant_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/textView_description"
+            style="@style/Opens_Sans_Bold_H3_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/text_nameTitle_description"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView_description_content"
+            style="@style/Opens_Sans_Regular_H4_16"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:breakStrategy="high_quality"
+            android:elevation="1dp"
+            android:gravity="start"
+            android:lineSpacingExtra="8dp"
+            android:maxLength="210"
+            android:maxLines="8"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/text_content_description"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_description"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView_performance_of_day"
+            style="@style/Opens_Sans_Bold_S_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:text="@string/text_performance"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView_description_content" />
+
+        <TextView
+            android:id="@+id/textView_performance_number"
+            style="@style/Opens_Sans_Regular_H4_16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_background_texts_fields"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/text_performance_number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textView_performance_of_day"
+            app:layout_constraintStart_toStartOf="@+id/textView_performance_of_day"
+            app:layout_constraintTop_toBottomOf="@+id/textView_performance_of_day" />
+
+        <TextView
+            android:id="@+id/textView_questions_of_day"
+            style="@style/Opens_Sans_Bold_S_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/text_questions_word"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/textView_performance_of_day"
+            app:layout_constraintTop_toTopOf="@+id/textView_performance_of_day" />
+
+        <TextView
+            android:id="@+id/textView_error"
+            style="@style/Opens_Sans_Bold_H4_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_error"
+            android:textColor="#B71C1C"
+            app:layout_constraintEnd_toStartOf="@+id/textView_match"
+            app:layout_constraintStart_toEndOf="@+id/textView_questions_of_day"
+            app:layout_constraintTop_toTopOf="@+id/textView_questions_of_day"
+            tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+        <TextView
+            android:id="@+id/textView_questions_number"
+            style="@style/Opens_Sans_Regular_H4_16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_background_texts_fields"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/text_initial_score"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textView_questions_of_day"
+            app:layout_constraintStart_toStartOf="@+id/textView_questions_of_day"
+            app:layout_constraintTop_toBottomOf="@+id/textView_questions_of_day" />
+
+        <TextView
+            android:id="@+id/textView_error_number"
+            android:layout_width="42dp"
+            android:layout_height="23dp"
+            android:background="@drawable/ic_background_texts_fields"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/text_error_score"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_questions_number"
+            app:layout_constraintEnd_toEndOf="@+id/textView_error"
+            app:layout_constraintStart_toStartOf="@+id/textView_error"
+            tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+        <ImageView
+            android:id="@+id/textView_match"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/contentDescription_text_match"
+            android:src="@drawable/ic_match"
+            app:layout_constraintEnd_toEndOf="@+id/textView_description_content"
+            app:layout_constraintTop_toTopOf="@+id/textView_performance_of_day"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView_match_number"
+            android:layout_width="42dp"
+            android:layout_height="23dp"
+            android:background="@drawable/ic_background_texts_fields"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/text_error_score"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_error_number"
+            app:layout_constraintEnd_toEndOf="@+id/textView_match"
+            app:layout_constraintStart_toStartOf="@+id/textView_match"
+            tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_match_number"
+            app:srcCompat="@drawable/ic_button_back_right"
+            android:contentDescription="@string/contentDescription_button_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Calendar to SubjectListFragment -->
+    <item name="action_subjectCalendarFragment_to_subjectFragment" type="id" />
+    <item name="action_subjectFragment_to_subjectCalendarFragment" type="id" />
+
+    <!--SubjectListFragment to TopicSearchFragment -->
+    <item name="action_subjectFragment_to_topicSearchFragment" type="id" />
+
+    <!--Calendar to TopicListFragment -->
+    <item name="action_subjectCalendarFragment_to_topicFragment" type="id" />
+    <item name="action_topicFragment_to_subjectCalendarFragment" type="id" />
+
+    <!--TopicListFragment to Description Dialog -->
+    <item name="action_topicFragment_to_descriptionDialogFragment" type="id" />
+    <item name="action_descriptionDialogFragment_to_topicFragment" type="id" />
+
+
+    <item name="action_subjectFormFragment_to_subjectFragment" type="id" />
+    <item name="action_subjectFragment_to_subjectFormFragment" type="id" />
+    <item name="action_topicSearchFragment_to_subjectFragment" type="id" />
+
+    <item name="action_topicFragment_to_performanceDialogFragment" type="id" />
+    <item name="action_performanceDialogFragment_to_topicFragment" type="id" />
+
+
+    <item name="action_topicSearchFragment_to_descriptionDialogFragment" type="id" />
+    <item name="action_subjectFragment_to_printOutFragment" type="id" />
+    <item name="action_printOutFragment_to_subjectFragment" type="id" />
+
+    <item name="action_topicFormFragment_to_topicFragment" type="id" />
+
+    <item name="action_createAccountFragment_to_loginFragment" type="id" />
+    <item name="action_loginFragment_to_createAccountFragment" type="id" />
+
+    <item name="action_accountDetailsFragment_to_homeFragment" type="id" />
+    <item name="action_accountDetailsFragment_to_mainActivity" type="id" />
+    <item name="action_configurationFragment_to_homeActivity" type="id" />
+
+
+
+
+
+</resources>

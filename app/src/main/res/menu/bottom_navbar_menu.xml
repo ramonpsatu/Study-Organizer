@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/subjectFragment"
+        android:title="@string/text_subjects_word"
+        android:icon="@drawable/ic_button_subject"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/subjectCalendarFragment"
+        android:title="@string/text_calendar"
+        android:icon="@drawable/ic_button_calendar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/text_home_word"
+        android:icon="@drawable/ic_button_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/printOutFragment"
+        android:title="PDFs"
+        android:icon="@drawable/ic_button_printing"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/configurationFragment"
+        android:title="@string/text_settings_word"
+        android:icon="@drawable/ic_button_config"
+        app:showAsAction="ifRoom" />
+</menu>

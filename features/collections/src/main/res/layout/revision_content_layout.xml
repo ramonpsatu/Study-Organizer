@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="4dp"
+    tools:ignore="TextSizeCheck">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_backg_calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_date"
+        style="@style/Opens_Sans_Bold_H5_14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="@string/word_date_with_colon"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        style="@style/Opens_Sans_Bold_S_12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:text="@string/word_schedule_with_colon"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_date" />
+
+    <TextView
+        android:id="@+id/textView10"
+        style="@style/Opens_Sans_Bold_H5_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/text_title_word_with_colon"
+        app:layout_constraintStart_toStartOf="@+id/textView_date"
+        app:layout_constraintTop_toBottomOf="@+id/textView_time" />
+
+    <TextView
+        android:id="@+id/textView_text_title"
+        style="@style/Opens_Sans_Regular_H5_14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black_minus_2"
+        android:text="@string/text_topic_title"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView_revision_data"
+        style="@style/Opens_Sans_Regular_H5_14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black_minus_2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_date"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/textView_date"
+        app:layout_constraintTop_toTopOf="@+id/textView_date" />
+
+    <TextView
+        android:id="@+id/textView_revision_schedule"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black_minus_2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_time"
+        app:layout_constraintEnd_toEndOf="@+id/textView_revision_data"
+        app:layout_constraintStart_toEndOf="@+id/textView_time"
+        app:layout_constraintTop_toTopOf="@+id/textView_time" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_card_view_print_out_screen"
+    android:layout_height="@dimen/height_card_view_print_out_screen"
+    android:layout_gravity="center"
+   android:layout_margin="4dp"
+    android:background="@drawable/ic_background_texts_fields"
+    android:elevation="4dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    app:cardCornerRadius="12dp"
+    tools:ignore="TextSizeCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/colored_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background_texts_fields">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_background_texts_fields">
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/Opens_Sans_Bold_H4_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/text_new_subject_title"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_subject_title"
+                android:fontFamily="@font/open_sans"
+                android:textSize="@dimen/text_size_texts_create_acc_screen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="24dp"
+                android:breakStrategy="high_quality"
+                android:gravity="center|start"
+                android:maxLength="75"
+                android:text="@string/text_subject_title"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/textView_topic_word"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView_topic_word"
+                style="@style/Opens_Sans_Bold_S_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/text_topics_word"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView_subject_title" />
+
+            <TextView
+                android:id="@+id/textView_number_of_topics"
+                style="@style/Opens_Sans_Regular_S_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/text_initial_score"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_topic_word"
+                app:layout_constraintStart_toEndOf="@+id/textView_topic_word"
+                app:layout_constraintTop_toTopOf="@+id/textView_topic_word" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

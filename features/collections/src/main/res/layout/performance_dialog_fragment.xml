@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg_cards"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="330dp"
+        android:layout_height="264dp"
+        android:background="@drawable/ic_buttons"
+        android:backgroundTint="@color/colorPrimaryVariant_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
+
+        <ImageView
+            android:id="@+id/textView_back"
+            android:layout_width="45dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/contentDescription_button_back"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_button_back"
+            app:layout_constraintBottom_toBottomOf="@+id/button_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button_register" />
+
+        <EditText
+            android:id="@+id/editText_error"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_bg_small_fields"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:nextFocusDown="@id/editText_match"
+            android:selectAllOnFocus="true"
+            android:text="@string/text_error_score"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,LabelFor" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Opens_Sans_Bold_H4_16"
+            android:text="@string/contentDescription_text_error"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/editText_error"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/arimo"
+            android:text="@string/text_error"
+            android:textColor="#B71C1C"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_error"
+            app:layout_constraintEnd_toStartOf="@+id/editText_error"
+            app:layout_constraintTop_toTopOf="@+id/editText_error"
+            tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+
+        <EditText
+            android:id="@+id/editText_match"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_bg_small_fields"
+            android:backgroundTint="@color/white_minus_1"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:selectAllOnFocus="true"
+            android:text="@string/text_error_score"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contentDescription_text_match"
+            android:textColor="@color/white"
+            style="@style/Opens_Sans_Bold_H4_16"
+            app:layout_constraintBottom_toTopOf="@+id/editText_match"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            tools:ignore="TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_register"
+            style="@style/buttons_tertiary_minus_1"
+            android:layout_width="125dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/text_word_register"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editText_match"
+            app:layout_constraintStart_toStartOf="@+id/editText_error"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/textView_match"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/contentDescription_text_match"
+            android:src="@drawable/ic_match"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_match"
+            app:layout_constraintEnd_toStartOf="@+id/editText_match"
+            app:layout_constraintTop_toTopOf="@+id/editText_match"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Opens_Sans_Bold_H3_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/text_performance"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/white_minus_1"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Opens_Sans_Bold_H3_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="@color/white_minus_1"
+            app:layout_constraintEnd_toEndOf="@+id/view15"
+            app:layout_constraintStart_toStartOf="@+id/view15"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Opens_Sans_Bold_H3_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="%"
+            android:textSize="28sp"
+            android:textColor="@color/white_minus_1"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/view15"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="52dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/button_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_letter_r"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="48dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/button_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_letter_e"
+            tools:ignore="ImageContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

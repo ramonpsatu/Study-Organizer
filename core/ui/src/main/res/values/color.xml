@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_default">#102E82</color>
+    <color name="colorPrimary_minus_1">#1D41A8</color>
+    <color name="colorPrimary_plus_1">#061D5C</color>
+
+    <color name="colorPrimaryVariant_default">#3C5FBB</color>
+    <color name="colorPrimaryVariant_minus_1">#537AE0</color>
+    <color name="colorPrimaryVariant_plus_1">#284694</color>
+
+    <color name="colorSecondary_default">#EBB52F</color>
+    <color name="colorSecondary_minus_1">#FFC840</color>
+    <color name="colorSecondary_plus_1">#C4941D</color>
+
+    <color name="colorTertiary_default">#8A8DC1</color>
+    <color name="colorTertiary_minus_1">#B3B6E8</color>
+    <color name="colorTertiary_plus_1">#686B9C</color>
+
+
+    <color name="black">#050505</color>
+    <color name="black_minus_1">#1A1A1A</color>
+    <color name="black_minus_2">#333333</color>
+    <color name="black_bg_dialogs">#00616161</color>
+    <color name="black_bg_cards">#80000000</color>
+
+
+
+    <color name="white">#FAFAFA</color>
+    <color name="white_minus_1">#F2F2F2</color>
+    <color name="white_minus_2">#E6E6E6</color>
+    <color name="white_minus_3">#D9D9D9</color>
+    <color name="white_minus_4">#F5F5F4</color>
+
+    <!-- Letter color of the calendar-->
+    <color name="green_dark_letter">#B32A4B37</color>
+    <!-- Background color  text days of week, field frequency-->
+    <color name="text_bgColor_orange">#FFB448</color>
+    <color name="bgColor_textViews_inCalendar_screen">#00FFFFFF</color>
+
+    <!-- Background color of the fields error and match-->
+    <color name="color_background_error">#590F0F</color>
+    <color name="color_background_match">#072E0D</color>
+
+    <!-- Background color  navigation bar-->
+    <color name="color_naviBar">#48474C</color>
+
+    <!-- Background color  of the view in SubjectForm-->
+    <color name="bgColor_colorView_pink">#40FC80FF</color>
+    <color name="bgColor_colorView_orange">#40FDB57E</color>
+    <color name="bgColor_colorView_red_pink">#40FD7F7F</color>
+    <color name="bgColor_colorView_purple">#40BA9BF8</color>
+    <color name="bgColor_colorView_blue">#4072B0E1</color>
+    <color name="bgColor_colorView_green">#4099ED78</color>
+    <color name="bgColor_colorView_yellow">#40F3CC70</color>
+    <color name="bgColor_colorView_pink_dark">#9E689F</color>
+    <color name="bgColor_colorView_orange_dark">#A18068</color>
+    <color name="bgColor_colorView_red_pink_dark">#A56F6F</color>
+    <color name="bgColor_colorView_purple_dark">#8672AA</color>
+    <color name="bgColor_colorView_blue_dark">#68879F</color>
+    <color name="bgColor_colorView_green_dark">#769E67</color>
+    <color name="bgColor_colorView_yellow_dark">#9E9352</color>
+    <color name="bgColor_colorView_light_gray">#A8A6A6</color>
+
+
+    <!-- Background color  icon subject   / #BFE4E9EC / #995F6E75-->
+    <color name="light_pink">#F8A2FA</color>
+    <color name="cream_orange">#FAC7A1</color>
+    <color name="red_pink">#FFABAB</color>
+    <color name="light_purple">#C2A6FA</color>
+    <color name="light_blue">#A4D4FA</color>
+    <color name="light_green">#B9F6A1</color>
+    <color name="light_yellow">#F6E680</color>
+    <color name="light_gray">#D9D9D9</color>
+    <color name="bgTextTimer_blue">#23536B</color>
+    <color name="bg_topic_field">#BFABC2CF</color>
+    <color name="bg_topic_field_completed">#994B565A</color>
+
+    <color name="background_color">#155279</color>
+
+
+</resources>

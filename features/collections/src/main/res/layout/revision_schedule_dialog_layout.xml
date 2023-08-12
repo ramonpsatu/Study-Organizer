@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg_cards"
+    android:clickable="true"
+    android:elevation="13dp"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="320dp"
+        android:layout_height="380dp"
+        android:background="@drawable/ic_backg_calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        style="@style/Opens_Sans_Bold_H5_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/word_date"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/view_bg"
+        app:layout_constraintTop_toTopOf="@+id/view_bg" />
+
+    <TextView
+        android:id="@+id/textView_date_revision"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_background_field_userdata"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:hint="@string/text_click_btn_choose_date"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_calendar"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView_date_to"
+        style="@style/Opens_Sans_Bold_H5_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/word_schedule"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+
+    <EditText
+        android:id="@+id/editTextTime_hour"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_bg_small_fields"
+        android:backgroundTint="@color/white_minus_3"
+        android:gravity="center"
+        android:hint="00"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="2"
+        android:nextFocusRight="@+id/editTextTime_minutes"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view_bg"
+        app:layout_constraintStart_toStartOf="@+id/textView_date_to"
+        app:layout_constraintTop_toBottomOf="@+id/textView_date_to"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTime_minutes"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_bg_small_fields"
+        android:backgroundTint="@color/white_minus_3"
+        android:gravity="center"
+        android:hint="00"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTime_hour"
+        app:layout_constraintEnd_toStartOf="@+id/radio_group_am_or_pm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/editTextTime_hour"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView16"
+        style="@style/Opens_Sans_Bold_H5_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_title_word"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/view0" />
+
+    <ImageView
+        android:id="@+id/btn_calendar"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:importantForAccessibility="no"
+        android:padding="8dp"
+        android:src="@drawable/ic_task_search"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_date_revision"
+        app:layout_constraintEnd_toEndOf="@+id/view_bg"
+        app:layout_constraintTop_toTopOf="@+id/textView_date_revision" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text=":"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTime_minutes"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTime_minutes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTime_hour"
+        app:layout_constraintTop_toTopOf="@+id/editTextTime_hour"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView_hour"
+        style="@style/Opens_Sans_Bold_S_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/word_hour"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTime_hour"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTime_hour"
+        app:layout_constraintStart_toStartOf="@+id/editTextTime_hour" />
+
+    <TextView
+        android:id="@+id/textView_minute"
+        style="@style/Opens_Sans_Bold_S_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/word_minutes"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTime_minutes"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTime_minutes"
+        app:layout_constraintStart_toStartOf="@+id/editTextTime_minutes" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_background_field_userdata"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_calendar"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_title"
+            style="@style/Opens_Sans_Regular_S_12"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/ic_background_field_userdata"
+            android:gravity="start|top"
+            android:maxLength="75"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_back_to"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_background_75alpha"
+        android:backgroundTint="@color/colorPrimary_plus_1"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/white_minus_4"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view_bg"
+        app:layout_constraintTop_toBottomOf="@+id/view_bg"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/view0"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#91A69F9D"
+        app:layout_constraintEnd_toEndOf="@+id/view_bg"
+        app:layout_constraintStart_toStartOf="@+id/view_bg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calendar" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#91A69F9D"
+        app:layout_constraintEnd_toEndOf="@+id/view_bg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_bg"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_title" />
+
+    <TextView
+        android:id="@+id/textView_btn_save"
+        style="@style/Opens_Sans_Bold_S_12"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="end|bottom"
+        android:padding="4dp"
+        android:text="@string/contentDescription_save_button"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/view_bg"
+        app:layout_constraintEnd_toEndOf="@+id/view_bg" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_am_or_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/view_bg"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        tools:ignore="TextSizeCheck">
+
+        <RadioButton
+            android:id="@+id/radioButton_pm"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:text="PM"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButton_am"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:text="AM"
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

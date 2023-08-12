@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SOFS</string>
+    <string name="text_confirm_email">Confirm Email:</string>
+    <string name="text_create_account_title">Create Account</string>
+    <string name="text_confirm_password">Confirm Password:</string>
+    <string name="acc_successfully_created">Account successfully created.</string>
+    <string name="login_completed_successfully">Login completed successfully.</string>
+    <string name="texte_i_get_it">I get it</string>
+</resources>

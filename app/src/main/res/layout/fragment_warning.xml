@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_minus_1">
+
+
+    <TextView
+        android:id="@+id/textView_information"
+        style="@style/Opens_Sans_Bold_H3_21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/black_minus_2"
+        android:breakStrategy="high_quality"
+        android:elevation="9dp"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:padding="2dp"
+        android:text="@string/text_offline_information"
+        android:textColor="@color/colorPrimary_plus_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tbn_i_get_it"
+        style="@style/Opens_Sans_Bold_H4_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/ic_background_75alpha"
+        android:backgroundTint="@color/colorPrimary_plus_1"
+        android:gravity="center"
+        android:text="@string/texte_i_get_it"
+        android:textColor="@color/white_minus_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_information" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

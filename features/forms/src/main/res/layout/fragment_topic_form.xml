@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_minus_1"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_header"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAccessibility="no" />
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            android:layout_width="45dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/white"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_button_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/contentDescription_button_back" />
+
+        <View
+            android:id="@+id/view0"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="#91A69F9D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout_box" />
+
+        <TextView
+            android:id="@+id/textView_topic_word_exhibition"
+            style="@style/Opens_Sans_Bold_H3_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:elevation="4dp"
+            android:text="@string/text_new_topic_word"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView_title_word_exhibition"
+            style="@style/Opens_Sans_Bold_H4_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_new_subject_title"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view0"
+            app:layout_constraintTop_toBottomOf="@+id/textView_date_of_topic" />
+
+
+        <TextView
+            android:id="@+id/textView_frequency_word_exhibition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            style="@style/Opens_Sans_Bold_H4_16"
+            android:text="@string/text_name_description"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView_title_word_exhibition"
+            app:layout_constraintTop_toBottomOf="@+id/view0" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLines="2"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="75"
+            app:layout_constraintEnd_toEndOf="@+id/view0"
+            app:layout_constraintStart_toStartOf="@+id/textView_title_word_exhibition"
+            app:layout_constraintTop_toBottomOf="@+id/textView_title_word_exhibition">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputLayout"
+                style="@style/Opens_Sans_Regular_H4_16"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_background_field_userdata"
+                android:breakStrategy="high_quality"
+                android:gravity="start|center"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="75"
+                android:nextFocusDown="@+id/textInputEditText_description"
+                android:padding="4dp"
+                android:scrollbars="horizontal"
+                android:scrollHorizontally="true"
+                tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLength="208"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="210"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout_box"
+            app:layout_constraintStart_toStartOf="@+id/textView_frequency_word_exhibition"
+            app:layout_constraintTop_toBottomOf="@+id/textView_frequency_word_exhibition">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText_description"
+                style="@style/Opens_Sans_Regular_H4_16"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:background="@drawable/ic_background_field_userdata"
+                android:breakStrategy="high_quality"
+                android:gravity="start|top"
+                android:maxLength="210"
+                android:maxLines="7"
+                android:nextFocusDown="@+id/button_new_topic_save"
+                android:scrollbars="vertical"
+                tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_new_topic_save"
+            style="@style/buttons_tertiary_minus_1"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="140dp"
+            android:contentDescription="TODO"
+            android:text="@string/text_to_add"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout_description"
+            app:layout_constraintTop_toBottomOf="@+id/textView_frequency_word_exhibition"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView_date_of_topic"
+            style="@style/Opens_Sans_Bold_H4_16"
+            android:layout_width="320dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_bg_date_field"
+            android:clickable="false"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:maxWidth="360dp"
+            android:maxLines="1"
+            android:text="@string/text_topic_registration_date"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView_topic_word_exhibition"
+            tools:ignore="TextSizeCheck" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/marginTop_to_button"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

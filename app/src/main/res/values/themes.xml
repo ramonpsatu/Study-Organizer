@@ -1,0 +1,54 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SOFS" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#102E82</item>
+        <item name="colorPrimaryVariant">#3C5FBB</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#EBB52F</item>
+        <item name="colorSecondaryVariant">#8A8DC1</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorPrimary_default</item>
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">@color/colorPrimaryVariant_default</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+
+    <!-- Customize your  ActionBar state here. -->
+    <style name="Theme.SOFS.NoActionBAR">
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+
+    <!-- Customize your texInputLayout Appearance here. -->
+    <!-- Customize your CounterTex Appearance here. -->
+    <style name="CounterText" parent="TextAppearance.Design.Counter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#B71C1C</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <!-- Customize your EditTex Appearance here. -->
+    <style name="RedBoxStrokes" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#B71C1C</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="GreenBoxStrokes" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#18D620</item>
+    </style>
+
+    <!-- Customize your HintText Appearance here. -->
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+</resources>

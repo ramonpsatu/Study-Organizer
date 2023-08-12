@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Opens_Sans_Bold_H3_21">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="Opens_Sans_Bold_H4_16">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Opens_Sans_Bold_H5_14">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Opens_Sans_Bold_S_12">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Opens_Sans_Bold_S_10">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Opens_Sans_Regular_H3_21">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="Opens_Sans_Regular_H4_16">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="Opens_Sans_Regular_H5_14">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Opens_Sans_Regular_S_12">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Opens_Sans_Regular_S_10">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="buttons_tertiary_minus_1" parent="android:Widget.Button">
+        <item name="android:background">@drawable/ic_buttons</item>
+        <item name="android:backgroundTint">@color/colorTertiary_minus_1</item>
+        <item name="android:textColor">@color/colorPrimary_plus_1</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+</resources>

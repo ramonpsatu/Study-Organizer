@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.ramonpsatu.studyorganizer.core.data'
+    compileSdk rootProject.ext.sdkVersion
+    defaultConfig {
+        targetSdk targetVersion
+        minSdk minVersion
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+
+}
+
+dependencies {
+    implementation project(':core:ui')
+
+    implementation libs.androidx.room.ktx
+    implementation libs.androidx.core.ktx
+    kapt libs.androidx.room.compiler
+
+
+    //implementation libs.firebase.analytics.ktx
+    //implementation libs.firebase.firestore.ktx
+    //implementation libs.firebase.auth.ktx
+
+    implementation libs.kotlinx.coroutines.android
+    testImplementation libs.kotlinx.coroutines.test
+
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+
+}

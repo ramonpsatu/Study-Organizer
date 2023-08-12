@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/secondary_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.ramonpsatu.studyorganizer.view.activities.MainActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home">
+        <deepLink
+            android:id="@+id/deepLink3"
+            app:action="ACTION_VIEW"
+            app:uri="tos-app://com.ramonpesatu.tos/home_activity" />
+    </activity>
+    <action
+        android:id="@+id/action_subjectFragment_to_printOutFragment"
+        app:destination="@id/printOutFragment" />
+    <action
+        android:id="@+id/action_topicSearchFragment_to_subjectFragment"
+        app:destination="@id/subjectFragment"
+        app:popUpTo="@id/subjectFragment"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/subjectFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.SubjectFragment"
+        android:label="fragment_subject"
+        tools:layout="@layout/fragment_subject">
+        <action
+            android:id="@+id/action_subjectFragment_to_topicSearchFragment"
+            app:destination="@id/topicSearchFragment" />
+        <deepLink
+            android:id="@+id/deepLink4"
+            app:action="ACTION_VIEW"
+            app:uri="tos-app://com.ramonpesatu.tos/subject_frag" />
+        <action
+            android:id="@+id/action_subjectFragment_self"
+            app:destination="@id/subjectFragment" />
+        <action
+            android:id="@+id/action_subjectFragment_to_subjectFormFragment"
+            app:destination="@id/subjectFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/printOutFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.PDFGeneratorFragment"
+        android:label="PrintOutFragment"
+        tools:layout="@layout/fragment_print_out">
+        <deepLink
+            android:id="@+id/deepLink9"
+            app:action="ACTION_VIEW"
+            app:uri="tos-app://com.ramonpesatu.tos/pdf_screen" />
+    </fragment>
+    <action
+        android:id="@+id/action_topicFragment_to_performanceDialogFragment"
+        app:destination="@id/performanceDialogFragment" />
+    <fragment
+        android:id="@+id/subjectFormFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.forms.SubjectFormFragment"
+        android:label="fragment_subject_form"
+        tools:layout="@layout/fragment_subject_form">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:action="ACTION_VIEW"
+            app:uri="tos-app://com.ramonpesatu.tos/subject_form" />
+        <action
+            android:id="@+id/action_subjectFormFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment"
+            app:popUpTo="@id/subjectFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <action
+        android:id="@+id/action_subjectCalendarFragment_to_topicFragment"
+        app:destination="@id/topicFragment" />
+    <action
+        android:id="@+id/action_subjectFragment_to_subjectCalendarFragment"
+        app:destination="@id/subjectCalendarFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popUpTo="@id/subjectCalendarFragment"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/topicFormFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.forms.TopicFormFragment"
+        android:label="TopicFormFragment"
+        tools:layout="@layout/fragment_topic_form">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:action="ACTION_VIEW"
+            app:uri="tos-app://com.ramonpesatu.tos/topic_form" />
+        <action
+            android:id="@+id/action_topicFormFragment_to_topicFragment"
+            app:destination="@id/topicFragment"
+            app:popUpTo="@id/topicFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <action
+        android:id="@+id/action_topicFragment_to_subjectCalendarFragment"
+        app:destination="@id/subjectCalendarFragment"
+        app:popUpTo="@id/subjectCalendarFragment"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/subjectCalendarFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.SubjectCalendarFragment"
+        android:label="fragment_subject_calendar"
+        tools:layout="@layout/fragment_subject_calendar">
+        <action
+            android:id="@+id/action_subjectCalendarFragment_to_topicFragment"
+            app:destination="@id/topicFragment" />
+        <deepLink
+            android:id="@+id/deepLink8"
+            app:action="ACTION_VIEW"
+            app:uri="tos-app://com.ramonpesatu.tos/calendar_screen" />
+    </fragment>
+    <dialog
+        android:id="@+id/performanceDialogFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.PerformanceDialogFragment"
+        android:label="PerformanceDialogFragment"
+        tools:layout="@layout/performance_dialog_fragment">
+        <action
+            android:id="@+id/action_performanceDialogFragment_to_topicFragment"
+            app:destination="@id/topicFragment"
+            app:enterAnim="@anim/enter_move_in_animation_rght"
+            app:exitAnim="@anim/exit_slide_animation_right" />
+    </dialog>
+    <dialog
+        android:id="@+id/descriptionDialogFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.DescriptionDialogFragment"
+        android:label="DescriptionDialogFragment"
+        tools:layout="@layout/topic_description_layout">
+        <action
+            android:id="@+id/action_descriptionDialogFragment_to_topicFragment"
+            app:destination="@id/topicFragment"
+            app:enterAnim="@anim/enter_move_in_animation_rght"
+            app:exitAnim="@anim/exit_slide_animation_right"
+            app:popUpTo="@id/topicFragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+    <action
+        android:id="@+id/action_topicFragment_to_descriptionDialogFragment"
+        app:destination="@id/descriptionDialogFragment" />
+    <action
+        android:id="@+id/action_printOutFragment_to_subjectFragment"
+        app:destination="@id/subjectFragment"
+        app:popUpTo="@id/subjectFragment"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <deepLink
+            android:id="@+id/deepLink5"
+            app:action="ACTION_VIEW"
+            app:uri="tos-app://com.ramonpesatu.tos/home_screen" />
+        <action
+            android:id="@+id/action_homeFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_topicSearchFragment_to_descriptionDialogFragment"
+        app:destination="@id/descriptionDialogFragment" />
+    <action
+        android:id="@+id/action_subjectCalendarFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+    <action
+        android:id="@+id/action_homeFragment_to_subjectCalendarFragment"
+        app:destination="@id/subjectCalendarFragment" />
+    <fragment
+        android:id="@+id/topicFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.TopicFragment"
+        android:label="TopicFragment"
+        tools:layout="@layout/fragment_topic_list">
+        <action
+            android:id="@+id/action_topicFragment_to_descriptionDialogFragment"
+            app:destination="@id/descriptionDialogFragment"
+            app:enterAnim="@anim/enter_move_in_animation_rght"
+            app:exitAnim="@anim/exit_slide_animation_right" />
+        <action
+            android:id="@+id/action_topicFragment_to_performanceDialogFragment"
+            app:destination="@id/performanceDialogFragment"
+            app:enterAnim="@anim/enter_move_in_animation_rght"
+            app:exitAnim="@anim/exit_slide_animation_right" />
+        <action
+            android:id="@+id/action_topicFragment_to_subjectCalendarFragment"
+            app:destination="@id/subjectCalendarFragment" />
+
+    </fragment>
+    <action
+        android:id="@+id/action_subjectCalendarFragment_to_subjectFragment"
+        app:destination="@id/subjectFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+    <fragment
+        android:id="@+id/topicSearchFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.TopicSearchFragment"
+        android:label="fragment_topic_search"
+        tools:layout="@layout/fragment_topic_search">
+        <action
+            android:id="@+id/action_topicSearchFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment"
+            app:popUpTo="@id/subjectFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <action
+        android:id="@+id/action_performanceDialogFragment_to_topicFragment"
+        app:destination="@id/topicFragment" />
+
+    <action
+        android:id="@+id/action_subjectFragment_to_topicSearchFragment"
+        app:destination="@id/topicSearchFragment" />
+    <fragment
+        android:id="@+id/topicDetailsFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.TopicDetailsFragment"
+        android:label="TopicDetailsFragment"
+        tools:layout="@layout/fragment_topic_details" />
+    <fragment
+        android:id="@+id/accountDetailsFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.AccountDetailsFragment"
+        android:label="AccountDetailsFragment"
+        tools:layout="@layout/fragment_account_details">
+        <deepLink
+            android:id="@+id/deepLink6"
+            app:action="ACTION_VIEW"
+            app:uri="tos-app://com.ramonpesatu.tos/account_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/configurationFragment"
+        android:name="com.ramonpsatu.studyorganizer.features.collections.view.fragments.SettingsFragment"
+        android:label="ConfigurationFragment"
+        tools:layout="@layout/fragment_settings" >
+
+    </fragment>
+</navigation>
