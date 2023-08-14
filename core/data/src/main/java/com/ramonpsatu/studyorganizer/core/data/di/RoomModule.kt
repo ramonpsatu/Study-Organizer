@@ -2,7 +2,6 @@ package com.ramonpsatu.studyorganizer.core.data.di
 
 import android.app.Application
 import com.ramonpsatu.studyorganizer.core.data.database.AppDatabase
-import com.ramonpsatu.studyorganizer.core.data.database.dao.OffLineRegistrationDAO
 import com.ramonpsatu.studyorganizer.core.data.database.dao.RevisionDAO
 import com.ramonpsatu.studyorganizer.core.data.database.dao.SubjectDAO
 import com.ramonpsatu.studyorganizer.core.data.database.dao.TopicDAO
@@ -31,12 +30,6 @@ internal object RoomModule {
     @Provides
     fun providesTopicDAO(appDatabase: AppDatabase): TopicDAO {
         return appDatabase.topicDAO()
-    }
-
-    @Singleton
-    @Provides
-    fun providesOffLineRegistrationDAO(appDatabase: AppDatabase): OffLineRegistrationDAO {
-        return appDatabase.offLineRegistrationDAO()
     }
 
     @Singleton

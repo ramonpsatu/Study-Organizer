@@ -7,7 +7,6 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavController
 import androidx.navigation.NavDeepLinkRequest
 import androidx.navigation.findNavController
@@ -19,8 +18,6 @@ import com.ramonpsatu.studyorganizer.features.collections.view.fragments.Setting
 import com.ramonpsatu.studyorganizer.features.collections.viewmodels.SharedPreferencesViewModel
 import com.ramonpsatu.studyorganizer.features.collections.viewmodels.SubjectListViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class
@@ -31,8 +28,6 @@ MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var subjectViewModel: SubjectListViewModel
     private lateinit var preferencesViewModel: SharedPreferencesViewModel
     private lateinit var navController: NavController
-
-    private lateinit var job: Job
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,10 +64,6 @@ MainActivity : AppCompatActivity(), View.OnClickListener {
                 binding.bannerInforOutOfSync.visibility = View.GONE
                 binding.imageViewOutOfSync.visibility = View.VISIBLE
 
-                preferencesViewModel.viewModelScope.launch {
-                    preferencesViewModel.setShowSyncUI(baseContext, false)
-
-                }
             }
 
             binding.imageViewOutOfSync.id -> {
@@ -88,12 +79,6 @@ MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-
-
-
-    }
 
     override fun onResume() {
         super.onResume()
@@ -126,12 +111,6 @@ MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-
-
-    private suspend fun handlerErrorState(): String {
-
-        return "Error!"
-    }
 
     private fun setupBottomNavigation() {
 

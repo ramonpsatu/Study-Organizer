@@ -22,15 +22,6 @@ interface SharedPreferencesRepository {
 
     suspend fun getUserName(context: Context):String
 
-    suspend fun setUserEmail(context: Context,userEmail:String)
-
-    suspend fun getUserEmail(context: Context):String
-
-
-    suspend fun setShowUiSync(context: Context,show:Boolean)
-
-    suspend fun getShowUiSync(context: Context):Boolean
-
     suspend fun setInformativeGuideUi(context: Context, show: Boolean)
 
     suspend fun getStateInformativeGuideUi(context: Context):Boolean

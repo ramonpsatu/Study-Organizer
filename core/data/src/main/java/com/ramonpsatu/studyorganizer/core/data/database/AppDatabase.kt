@@ -2,18 +2,16 @@ package com.ramonpsatu.studyorganizer.core.data.database
 
 import android.content.Context
 import androidx.room.*
-import com.ramonpsatu.studyorganizer.core.data.database.dao.OffLineRegistrationDAO
 import com.ramonpsatu.studyorganizer.core.data.database.dao.RevisionDAO
 import com.ramonpsatu.studyorganizer.core.data.database.dao.SubjectDAO
 import com.ramonpsatu.studyorganizer.core.data.database.dao.TopicDAO
-import com.ramonpsatu.studyorganizer.core.data.database.entity.OffLineRegistration
 import com.ramonpsatu.studyorganizer.core.data.database.entity.Revision
 import com.ramonpsatu.studyorganizer.core.data.database.entity.Subject
 import com.ramonpsatu.studyorganizer.core.data.database.entity.Topic
 
 @Database(
     entities = [
-        Subject::class, Topic::class, OffLineRegistration::class, Revision::class],
+        Subject::class, Topic::class, Revision::class],
     version = 1,
     exportSchema = false
 )
@@ -24,7 +22,6 @@ internal abstract class AppDatabase : RoomDatabase() {
     abstract fun subjectDAO(): SubjectDAO
     abstract fun topicDAO(): TopicDAO
 
-    abstract fun offLineRegistrationDAO(): OffLineRegistrationDAO
 
     companion object {
         @Volatile

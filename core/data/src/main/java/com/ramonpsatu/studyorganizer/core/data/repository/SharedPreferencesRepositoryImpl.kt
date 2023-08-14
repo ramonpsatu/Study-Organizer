@@ -3,7 +3,6 @@ package com.ramonpsatu.studyorganizer.core.data.repository
 import android.content.Context
 import com.ramonpsatu.studyorganizer.core.data.constant.KeysPreference
 import com.ramonpsatu.studyorganizer.core.data.database.SharedPreferences
-import com.ramonpsatu.studyorganizer.core.data.repository.SharedPreferencesRepository
 import javax.inject.Inject
 
 class SharedPreferencesRepositoryImpl @Inject constructor(private val preferences: SharedPreferences) :
@@ -73,26 +72,7 @@ class SharedPreferencesRepositoryImpl @Inject constructor(private val preference
         return preferences.sharedInstance(context).getString(KeysPreference.USER_NAME, "...")!!
     }
 
-    override suspend fun setUserEmail(context: Context, userEmail: String) {
-        preferences.sharedInstance(context).edit().putString(KeysPreference.USER_EMAIL, userEmail).apply()
-    }
 
-    override suspend fun getUserEmail(context: Context): String {
-        return preferences.sharedInstance(context).getString(KeysPreference.USER_EMAIL, "...")!!
-    }
-
-    override suspend fun setShowUiSync(context: Context, show: Boolean) {
-        preferences.sharedInstance(context).edit().putBoolean(KeysPreference.SHOW_SYNC_UI, show).apply()
-    }
-
-    override suspend fun getShowUiSync(context: Context): Boolean {
-        var bool = false
-        if (preferences.sharedInstance(context).contains(KeysPreference.SHOW_SYNC_UI)) {
-            bool = preferences.sharedInstance(context).getBoolean(KeysPreference.SHOW_SYNC_UI, false)
-
-        }
-        return bool
-    }
 
     override suspend fun setInformativeGuideUi(context: Context, show: Boolean) {
         preferences.sharedInstance(context).edit().putBoolean(KeysPreference.SHOW_INFORMATIVE_GUIDE_UI, show).apply()
