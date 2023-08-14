@@ -246,10 +246,6 @@ class HomeFragment : Fragment(), DatePicker.OnDateChangedListener,
 
         subjectListViewModel.viewModelScope.launch {
 
-            if (preferenceViewModel.getUserName(requireContext()) == "...") {
-
-
-            }
             val displayName = "${getString(com.ramonpsatu.studyorganizer.core.ui.R.string.text_hello_name)} ${
                 preferenceViewModel.getUserName(requireContext())
             }!"

@@ -76,12 +76,6 @@ class SharedPreferencesViewModel @Inject constructor(
         }
     }
 
-    fun clearPreferences(context: Context) {
-
-        viewModelScope.launch {
-            preferencesRepository.clearPreferences(context)
-        }
-    }
 
     suspend fun setUserName(context: Context, username: String) {
         preferencesRepository.setUserName(context, username)
@@ -92,21 +86,7 @@ class SharedPreferencesViewModel @Inject constructor(
         return preferencesRepository.getUserName(context)
     }
 
-    suspend fun setUserEmail(context: Context, userEmail: String) {
-        preferencesRepository.setUserEmail(context, userEmail)
-    }
 
-    suspend fun getUserEmail(context: Context): String {
-        return preferencesRepository.getUserEmail(context)
-    }
-
-    suspend fun getShowSyncUI(context: Context): Boolean {
-        return preferencesRepository.getShowUiSync(context)
-    }
-
-    suspend fun setShowSyncUI(context: Context, show: Boolean) {
-        preferencesRepository.setShowUiSync(context, show)
-    }
 
 
     suspend fun getStateInformativeGuideUI(context: Context): Boolean {

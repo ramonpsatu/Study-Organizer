@@ -46,19 +46,23 @@ class SubjectFragment : Fragment() {
     private var removeComplete = false
 
     private var requestLink =
-        NavDeepLinkRequest.Builder.fromUri("tos-app://com.ramonpesatu.tos/subject_form".toUri()).build()
+        NavDeepLinkRequest.Builder.fromUri("tos-app://com.ramonpesatu.tos/subject_form".toUri())
+            .build()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this)[SubjectListViewModel::class.java]
-        ViewModelProvider(this)[SharedPreferencesViewModel::class.java].also { preferenceViewModel = it }
+        ViewModelProvider(this)[SharedPreferencesViewModel::class.java].also {
+            preferenceViewModel = it
+        }
 
         val toggleSubject = object : ToggleClickListener {
             override fun updateToggle(isCompleted: Int, itemId: String, adapterPosition: Int) {
 
                 viewModel.viewModelScope.launch {
                     viewModel.updateToggle(isCompleted, itemId)
+                    refreshList()
                 }
 
             }
@@ -115,15 +119,14 @@ class SubjectFragment : Fragment() {
         preferenceViewModel.viewModelScope.launch {
             removeComplete = preferenceViewModel.getRemoveCompleted(requireContext())
         }
-
         viewModel.viewModelScope.launch {
-
-            if (removeComplete){
+            if (removeComplete) {
                 viewModel.refreshWithNotCompletedItemsUiState()
-            }else{
+            } else {
                 viewModel.refreshUiState()
             }
         }
+
 
         viewModel.stateOnceAndStream()
             .observe(viewLifecycleOwner) {
@@ -152,10 +155,22 @@ class SubjectFragment : Fragment() {
         _binding = null
 
     }
-    private fun handlerInformativeGuide(){
+
+    private suspend fun refreshList() {
+
+
+        if (removeComplete) {
+            viewModel.refreshWithNotCompletedItemsUiState()
+        } else {
+            viewModel.refreshUiState()
+        }
+
+    }
+
+    private fun handlerInformativeGuide() {
         preferenceViewModel.viewModelScope.launch {
 
-            if (!preferenceViewModel.getStateInformativeGuideUI(requireContext())){
+            if (!preferenceViewModel.getStateInformativeGuideUI(requireContext())) {
                 AlertDialog.Builder(requireContext()).apply {
                     setTitle(getString(com.ramonpsatu.studyorganizer.core.ui.R.string.text_subjects_word))
                     setMessage(getString(com.ramonpsatu.studyorganizer.core.ui.R.string.text_subject_screen_register))
@@ -165,6 +180,7 @@ class SubjectFragment : Fragment() {
         }
 
     }
+
     private fun handlerDragAndSwipe() {
 
         val itemTouch = object : ItemTouchHelper.Callback() {
@@ -218,7 +234,8 @@ class SubjectFragment : Fragment() {
 
     private fun showDialogDeleteItem(itemPosition: Int) {
         AlertDialog.Builder(requireContext())
-            .setTitle(com.ramonpsatu.studyorganizer.core.ui.R.string.text_title_delete_dialog).setCancelable(false)
+            .setTitle(com.ramonpsatu.studyorganizer.core.ui.R.string.text_title_delete_dialog)
+            .setCancelable(false)
             .setMessage(viewModel.getAttributesOfSubject(itemPosition).title)
             .setPositiveButton(
                 requireContext().getString(com.ramonpsatu.studyorganizer.core.ui.R.string.text_delete_word)
@@ -227,8 +244,7 @@ class SubjectFragment : Fragment() {
                     val id = viewModel.getAttributesOfSubject(itemPosition).id
 
                     viewModel.deleteSubject(id)
-                    viewModel.refreshUiState()
-                    viewModel.refreshUiStateDaysOfWeek()
+                    refreshList()
 
                 }
             }

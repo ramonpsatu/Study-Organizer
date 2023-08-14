@@ -207,7 +207,6 @@ class SubjectListViewModel @Inject constructor(
 
     suspend fun updateToggle(isCompleted: Int, subjectId: String) {
         subjectRepository.updateSubjectToggle(isCompleted, subjectId)
-        refreshUiState()
     }
 
 

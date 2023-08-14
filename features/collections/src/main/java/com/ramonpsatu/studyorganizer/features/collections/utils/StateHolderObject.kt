@@ -8,14 +8,11 @@ object StateHolderObject {
     var turn_flag_SaveOrUpdate = false
     var dateTodayForTopic = ""
     var dayOfWeek = 0
-    var versionCodeName = ""
 
     var currentNavbarButton = 0
     var configurationFragmentFlag = true
     var configurationFragmentSwitch = true
-    var flagAccountDetailsTextChange = 0
-    var emailToEdit = "email..."
-    var userHaveBeenDeleted = false
+
 
 
     private var id: String = ""
