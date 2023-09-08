@@ -5,6 +5,8 @@ androidMaterialVersion = "1.8.0"
 androidXAppcompatVersion = "1.6.1"
 androidXCoreVerion = "1.9.0"
 androidXTestExtJunitVersion = "1.1.5"
+androidXTestCoreVersion = "1.5.0"
+androidCoreTestingVersion = "1.1.1"
 junitVersion = "4.13.2"
 coroutinesTestVersion = "1.6.4"
 roomVersion = "2.5.0"
@@ -20,6 +22,9 @@ dataStoreVersion = "1.0.0"
 hiltVersion = "2.47"
 androidXLifecycleVersion = "2.5.1"
 legacySupportV4 = "1.0.0"
+mockitoCoreVersion = "4.8.0"
+mockitoKotlinVersion = "4.0.0"
+mockkVersion = "1.13.3"
 
 
 [libraries]
@@ -32,10 +37,6 @@ androidx-room-ktx = { module = "androidx.room:room-ktx", version = "2.5.2" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version = "2.5.2" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.7.3" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinXSrializationJsonVersion" }
-test-junit = { module = "junit:junit", version.ref = "junitVersion" }
-androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidXTestExtJunitVersion" }
-androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "testXEspressoCoreVersion" }
-kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version = "1.7.3" }
 android-material = { module = "com.google.android.material:material", version = "1.9.0" }
 androidx-data-store = { module = "androidx.datastore:datastore-preferences", version.ref = "dataStoreVersion" }
 androidx-legacy = {module = "androidx.legacy:legacy-support-v4", version.ref = "legacySupportV4"}
@@ -43,7 +44,17 @@ androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", vers
 androidx-lifecycle-livedata-ktx = {module = "androidx.lifecycle:lifecycle-livedata-ktx", version = "2.6.1" }
 androidx-lifecycle-viewmodel-ktx = {module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version = "2.6.1" }
 
+core-testing = { module = 'android.arch.core:core-testing', version.ref = "androidCoreTestingVersion" }
+androidx-core-ktx-test = { module = "androidx.test:core-ktx", version.ref = "androidXTestCoreVersion" }
+junit = { module = "junit:junit", version.ref = "junitVersion" }
+androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidXTestExtJunitVersion" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version = "1.7.3" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCoreVersion" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlinVersion" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockkVersion" }
 
+
+androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "testXEspressoCoreVersion" }
 
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltVersion" }

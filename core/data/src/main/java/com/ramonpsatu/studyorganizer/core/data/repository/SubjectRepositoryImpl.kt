@@ -34,6 +34,7 @@ class SubjectRepositoryImpl @Inject constructor(
             }
         }
         Log.d(LOG_TAG, "List of Subjects returned.")
+
         return listOfSubjects
     }
 

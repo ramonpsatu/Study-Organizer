@@ -17,6 +17,12 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
+    testOptions {
+        // Used for Unit testing Android dependent elements in /test folder
+        unitTests.includeAndroidResources  = true
+        unitTests.returnDefaultValues = true
+        unitTests.returnDefaultValues = true
+    }
 
 }
 
@@ -28,9 +34,13 @@ dependencies {
     kapt libs.androidx.room.compiler
 
 
-    //implementation libs.firebase.analytics.ktx
-    //implementation libs.firebase.firestore.ktx
-    //implementation libs.firebase.auth.ktx
+    testImplementation libs.junit
+    testImplementation libs.androidx.core.ktx.test
+    testImplementation libs.mockito.core
+    testImplementation libs.mockito.kotlin
+    testImplementation libs.core.testing
+    testImplementation libs.kotlinx.coroutines.test
+    testImplementation libs.mockk
 
     implementation libs.kotlinx.coroutines.android
     testImplementation libs.kotlinx.coroutines.test
