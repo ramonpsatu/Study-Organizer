@@ -27,7 +27,7 @@ class SubjectListViewModel @Inject constructor(
     data class UiState(val subjectItemList: List<SubjectItem>)
     data class UiStateWeek(val subjectItemWeek: List<List<SubjectItem>>)
 
-    private val uiState: MutableLiveData<UiState> by lazy {
+     private val uiState: MutableLiveData<UiState> by lazy {
 
         MutableLiveData<UiState>(UiState(subjectItemList = emptyList()))
 
@@ -55,11 +55,9 @@ class SubjectListViewModel @Inject constructor(
 
     fun getSubjectListSize(): Int {
 
-        if (uiState.value!!.subjectItemList.isEmpty()){
-            return 0
-        }
+         val size = uiState.value?.subjectItemList?.size
 
-        return uiState.value!!.subjectItemList.size
+        return size?: 0
     }
 
     fun getCompletedSubjectListSize(): Int {
@@ -77,7 +75,7 @@ class SubjectListViewModel @Inject constructor(
 
     fun stateOnceDates(): LiveData<DatesState> = datesStateState
 
-    fun stateOnceAndStream(): LiveData<UiState> = uiState
+    fun  stateOnceAndStream(): LiveData<UiState> = uiState
 
     fun onResume() {
         viewModelScope.launch {
@@ -85,15 +83,15 @@ class SubjectListViewModel @Inject constructor(
         }
     }
 
-   suspend fun  getPerformanceTotal(): String {
+    suspend fun getPerformanceTotal(): String {
         val amountQuestions = getAmountOfQuestion().toFloat()
         val amountMatches = subjectRepository.getAmountOfMatches().toFloat()
-        val minus =  (amountMatches / amountQuestions)
-        val result = minus*100
-        var string =String.format("%.0f", result) + "%"
-       if (string.contains("NaN")){
-           string = "0"
-       }
+        val minus = (amountMatches / amountQuestions)
+        val result = minus * 100
+        var string = String.format("%.0f", result) + "%"
+        if (result.isNaN()) {
+            string = "0"
+        }
         return string
     }
 
@@ -109,13 +107,11 @@ class SubjectListViewModel @Inject constructor(
         viewModelScope.launch {
             subjectRepository.addSubject(
                 id,
-                title, isCompleted,  backgroundColor,
+                title, isCompleted, backgroundColor,
                 daysOfWeek, isSelected, position
 
 
             )
-            refreshUiState()
-            refreshUiStateDaysOfWeek()
         }
 
 
@@ -130,7 +126,7 @@ class SubjectListViewModel @Inject constructor(
     }
 
     fun updateSubjectPosition(
-       position: Int,
+        position: Int,
         subjectId: String
     ) {
         viewModelScope.launch {
@@ -215,11 +211,13 @@ class SubjectListViewModel @Inject constructor(
 
     }
 
-    suspend fun updateSubject(title: String, backgroundColor: Int, daysOfWeek: List<Int>,subjectId: String) {
-
+    suspend fun updateSubject(
+        title: String,
+        backgroundColor: Int,
+        daysOfWeek: List<Int>,
+        subjectId: String
+    ) {
         subjectRepository.updateSubject(title, backgroundColor, daysOfWeek, subjectId)
-        refreshUiState()
-
     }
 
     suspend fun updateSubjectSelected(isSelected: Int, subjectId: String) {
@@ -235,58 +233,63 @@ class SubjectListViewModel @Inject constructor(
         uiState.postValue(UiState(getAllSubjectUseCase()))
 
     }
+
     suspend fun refreshWithNotCompletedItemsUiState() {
-        uiState.postValue(UiState(subjectRepository.fetchOnlyCompletedSubjects().map { subjectDomain ->
-            SubjectItem(
+        uiState.postValue(
+            UiState(
+                subjectRepository.fetchOnlyCompletedSubjects().map { subjectDomain ->
+                    SubjectItem(
 
-                id = subjectDomain.id,
-                title = subjectDomain.title,
-                isCompleted = subjectDomain.isCompleted,
-                numbersOfTopics = 0,
-                numbersOfTopicsCompleted = 0,
-                backgroundColor = subjectDomain.backgroundColor,
-                daysOfWeek = subjectDomain.daysOfWeek,
-                isSelected = subjectDomain.isSelected,
-                position = subjectDomain.position
+                        id = subjectDomain.id,
+                        title = subjectDomain.title,
+                        isCompleted = subjectDomain.isCompleted,
+                        numbersOfTopics = 0,
+                        numbersOfTopicsCompleted = 0,
+                        backgroundColor = subjectDomain.backgroundColor,
+                        daysOfWeek = subjectDomain.daysOfWeek,
+                        isSelected = subjectDomain.isSelected,
+                        position = subjectDomain.position
 
 
-            )
+                    )
 
-        }.sortedBy { it.position.inc() }))
+                }.sortedBy { it.position.inc() })
+        )
     }
+
     suspend fun refreshWithNotCompletedUiStateDaysOfWeek() {
-        uiStateDaysOfWeek.postValue(UiStateWeek(subjectRepository.getNotCompletedSubjectsDaysOfWeek().map { subjectL ->
-            subjectL.map { subjectC ->
-                SubjectItem(
+        uiStateDaysOfWeek.postValue(
+            UiStateWeek(
+                subjectRepository.getNotCompletedSubjectsDaysOfWeek().map { subjectL ->
+                    subjectL.map { subjectC ->
+                        SubjectItem(
 
-                    id = subjectC.id,
-                    title = subjectC.title,
-                    isCompleted = subjectC.isCompleted,
-                    numbersOfTopics = 0,
-                    numbersOfTopicsCompleted = 0,
-                    backgroundColor = subjectC.backgroundColor,
-                    daysOfWeek = subjectC.daysOfWeek,
-                    isSelected = subjectC.isSelected,
-                    position = subjectC.position
+                            id = subjectC.id,
+                            title = subjectC.title,
+                            isCompleted = subjectC.isCompleted,
+                            numbersOfTopics = 0,
+                            numbersOfTopicsCompleted = 0,
+                            backgroundColor = subjectC.backgroundColor,
+                            daysOfWeek = subjectC.daysOfWeek,
+                            isSelected = subjectC.isSelected,
+                            position = subjectC.position
 
-                )
+                        )
 
 
-            }.sortedBy {
-                it.position.inc()
-
-            }
-        }))
+                    }.sortedBy { it.position.inc() }
+                })
+        )
     }
 
     suspend fun refreshDatesState() {
         datesStateState.postValue(
             DatesState(calendarRepository.fetchDaysOfWeek(), calendarRepository.fetchDatesOfWeek())
         )
-
     }
-
-
 }
+
+
+
 
 

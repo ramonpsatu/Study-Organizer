@@ -51,6 +51,12 @@ android {
 
         viewBinding true
     }
+    testOptions {
+        // Used for Unit testing Android dependent elements in /test folder
+        unitTests.includeAndroidResources  = true
+        unitTests.returnDefaultValues = true
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -85,7 +91,7 @@ dependencies {
     implementation libs.androidx.lifecycle.livedata.ktx
     implementation libs.androidx.lifecycle.viewmodel.ktx
 
-    testImplementation libs.test.junit
+    testImplementation libs.junit
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.androidx.test.espresso.core
     implementation libs.hilt.android

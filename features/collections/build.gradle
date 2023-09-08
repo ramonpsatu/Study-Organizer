@@ -25,6 +25,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
+    testOptions {
+        // Used for Unit testing Android dependent elements in /test folder
+        unitTests.includeAndroidResources  = true
+        unitTests.returnDefaultValues = true
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -36,9 +43,6 @@ dependencies {
 
     implementation libs.kotlinx.serialization.json
 
-
-    //implementation libs.firebase.firestore.ktx
-    //implementation libs.firebase.auth.ktx
 
 
     implementation libs.androidx.legacy
@@ -52,7 +56,17 @@ dependencies {
     implementation libs.androidx.core.ktx
     implementation libs.android.material
     implementation libs.androidx.constraintlayout
-    testImplementation libs.test.junit
+
+
+    testImplementation libs.junit
+    testImplementation libs.androidx.core.ktx.test
+    testImplementation libs.mockito.core
+    testImplementation libs.mockito.kotlin
+    testImplementation libs.core.testing
+    testImplementation libs.kotlinx.coroutines.test
+    testImplementation libs.mockk
+
+
 
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.androidx.test.espresso.core
