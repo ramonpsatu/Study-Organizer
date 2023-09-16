@@ -1,6 +1,16 @@
 # Study-Organizer
 - Create your subject grid, measure your performance and schedule your reviews
 
+# Technologies
+- MVVM
+- Room
+- Dependency injection
+- Dagger-Hilt
+- Unit Test
+- Mockito
+- JUnit
+- Modularization
+  
 ## Features
 - Create your subject grid
 - Choose the weekly periodicity
